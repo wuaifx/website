@@ -13,7 +13,8 @@ SimpleJekyllSearch({
     searchInput: document.getElementById('search_box'),
     resultsContainer: document.getElementById('search_results'),
   {% if site.cdn.jsdelivr.enabled and site.url contains 'feibuer.github.io/mywebsite' %}
-    json: 'https://cdn.jsdelivr.net/gh/feibuer/mywebsite@built/assets/search_data.json',
+  json: 'https://cdn.jsdelivr.net/gh/wuaifx/website@built/assets/search_data.json',
+<!--json: 'https://cdn.jsdelivr.net/gh/feibuer/mywebsite@built/assets/search_data.json',-->
 <!--json: 'https://cdn.jsdelivr.net/gh/mzlogin/mzlogin.github.io@built/assets/search_data.json',-->
   {% else %}
     json: '{{ site.url }}/assets/search_data.json',
