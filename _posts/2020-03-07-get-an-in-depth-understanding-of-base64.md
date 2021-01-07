@@ -122,7 +122,7 @@ public class CustomBase64Encoder {
 }
 ```
 
-这部分源码我也上传到 GitHub 仓库 <https://github.com/mzlogin/spring-practices> 的 base64test 工程里了。
+这部分源码我也上传到 GitHub 仓库 <https://github.com/wuaifx/spring-practices> 的 base64test 工程里了。
 
 ## 4. 其它知识点
 
@@ -143,4 +143,4 @@ public class CustomBase64Encoder {
 
 我的博客即将同步至腾讯云+社区，邀请大家一同入驻：https://cloud.tencent.com/developer/support-plan?invite_code=guk42yjsce8s
 
-[1]: https://mazhuang.org/2020/03/01/base64-bug/
+[1]: https://wuaifx.ga/2020/03/01/base64-bug/
