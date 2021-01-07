@@ -12,6 +12,7 @@ keywords: VBA, Excel
 
 使用索引号（从 1 开始）
 
+```vbnet
 Workbooks(1)
 ```
 

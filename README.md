@@ -1,6 +1,6 @@
 # 吾爱分享
 
-我的个人博客：<https://wuaifx.ga/>，欢迎 Star 和 Fork。
+我的个人博客：<https://feibuer.github.io/mywebsite/>，欢迎 Star 和 Fork。
 
 ## 概览
 
@@ -17,9 +17,9 @@
 
 ## 效果预览
 
-**[在线预览 &rarr;](https://wuaifx.ga/)**
+**[在线预览 &rarr;](https://feibuer.github.io/mywebsite/)**
 
-![screenshot home](https://wuaifx.ga/assets/images/screenshots/home.png)
+![screenshot home](https://feibuer.github.io/mywebsite/assets/images/screenshots/home.png)
 
 ## Fork 指南
 
@@ -56,7 +56,7 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 ## 使用文档
 
-- [本博客模板常见问题 Q & A](https://wuaifx.ga/2020/05/03/blog-template-qna/)。
+- [本博客模板常见问题 Q & A](https://feibuer.github.io/mywebsite/2020/05/03/blog-template-qna/)。
 
 - 在本地预览博客效果可以参考 [Setting up your Pages site locally with Jekyll][2]。
 
@@ -78,9 +78,9 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 ## 联系我
 
-如果对本博客模板或者内容有任何建议，可以通过 [Issues](https://wuaifx.ga/issues) 或者微信公众号「吾爱分享」与我取得联系。
+如果对本博客模板或者内容有任何建议，可以通过 [Issues](https://github.com/feibuer/mywebsite/issues) 或者微信公众号「吾爱分享」与我取得联系。
 
-<img width="192px" height="192px" src="https://wuaifx.ga/assets/images/qrcode.jpg"/>
+<img width="192px" height="192px" src="https://feibuer.github.io/mywebsite/assets/images/qrcode.jpg"/>
 
 <!--
 致谢
@@ -89,9 +89,9 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 Thanks for JetBrains' support.
 
-<a href="https://www.jetbrains.com/?from=wuaifx.github.io"><img src="./assets/images/jetbrains.svg"/></a>
+<a href="https://www.jetbrains.com/?from=mzlogin.github.io"><img src="./assets/images/jetbrains.svg"/></a>
 
-[1]: https://github.com/wuaifx/chinese-copywriting-guidelines
+[1]: https://github.com/mzlogin/chinese-copywriting-guidelines
 [2]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
-[3]: https://github.com/wuaifx/wuaifx.github.io/issues/2
+[3]: https://github.com/mzlogin/mzlogin.github.io/issues/2
 -->

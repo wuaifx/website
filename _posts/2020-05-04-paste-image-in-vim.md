@@ -27,7 +27,7 @@ keywords: Vim, Markdown, md-image-paste.vim
 
 效果演示：
 
-![](https://cdn.jsdelivr.net/gh/wuaifx/blog-assets/md-img-paste-example.gif)
+![](https://cdn.jsdelivr.net/gh/mzlogin/blog-assets/md-img-paste-example.gif)
 
 ## 使用方法
 
@@ -65,4 +65,4 @@ It's done, enjoy it.
 
 [^1]: <https://github.com/ferrine/md-img-paste.vim>
 [^2]: <https://github.com/VundleVim/Vundle.vim>
-[^3]: <https://github.com/wuaifx/config-files/blob/master/_vimrc>
+[^3]: <https://github.com/mzlogin/config-files/blob/master/_vimrc>

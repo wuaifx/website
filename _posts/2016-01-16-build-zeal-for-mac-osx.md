@@ -72,7 +72,7 @@ Zeal 的源码在 [zealdocs/zeal][1]，编译方法在 README 的 [How to compil
    macdeployqt Zeal.app -dmg
    ```
 
-   macdeployqt 命令在 Qt 安装目录下能找到，比如我的这个命令在 /Users/wuaifx/Qt5.5.0/5.5/clang_64/bin 目录下。
+   macdeployqt 命令在 Qt 安装目录下能找到，比如我的这个命令在 /Users/mazhuang/Qt5.5.0/5.5/clang_64/bin 目录下。
 
 ## 使用截图
 

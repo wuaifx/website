@@ -63,7 +63,7 @@ lsof .linux.md.swp
 #### 查看某个用户占用的文件信息
 
 ```sh
-lsof -u wuaifx
+lsof -u mazhuang
 ```
 
 `-u` 后面可以跟 uid 或 login name。
