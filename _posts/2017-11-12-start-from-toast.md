@@ -6,7 +6,7 @@ description: Android 源码分析，深入解析 Toast。
 keywords: RTFSC, Android, Toast
 ---
 
-本系列文章在 <https://github.com/mzlogin/rtfsc-android> 持续更新中，欢迎有兴趣的童鞋们关注。
+本系列文章在 <https://github.com/wuaifx/rtfsc-android> 持续更新中，欢迎有兴趣的童鞋们关注。
 
 ![](/images/posts/android/toast.png)
 
@@ -300,13 +300,13 @@ new Thread(new Runnable() {
 啊哦~很遗憾程序直接挂掉了。
 
 ```
-11-07 13:35:33.980 2020-2035/org.mazhuang.androiduidemos E/AndroidRuntime: FATAL EXCEPTION: Thread-77
+11-07 13:35:33.980 2020-2035/org.wuaifx.androiduidemos E/AndroidRuntime: FATAL EXCEPTION: Thread-77
     java.lang.RuntimeException: Can't create handler inside thread that has not called Looper.prepare()
         at android.widget.Toast$TN.<init>(Toast.java:390)
         at android.widget.Toast.<init>(Toast.java:114)
         at android.widget.Toast.makeText(Toast.java:277)
         at android.widget.Toast.makeText(Toast.java:267)
-        at org.mazhuang.androiduidemos.MainActivity$1.run(MainActivity.java:27)
+        at org.wuaifx.androiduidemos.MainActivity$1.run(MainActivity.java:27)
         at java.lang.Thread.run(Thread.java:856)
 ```
 
@@ -873,7 +873,7 @@ private static class TN extends ITransientNotification.Stub {
 
 最后，照例要安利一下我的微信公众号「闷骚的程序员」，扫码关注，接收 rtfsc-android 的最近更新。
 
-<div align="center"><img width="192px" height="192px" src="https://mazhuang.org/assets/images/qrcode.jpg"/></div>
+<div align="center"><img width="192px" height="192px" src="https://wuaifx.ga/assets/images/qrcode.jpg"/></div>
 
 [1]: https://developer.android.com/reference/android/widget/Toast.html
 [2]: https://developer.android.com/guide/topics/ui/notifiers/toasts.html

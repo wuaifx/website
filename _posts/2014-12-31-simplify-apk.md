@@ -89,7 +89,7 @@ keywords: Android
    res/menu/main.xml 文件里提示
 
    ```
-   error: No resource identifier found for attribute 'showAsAction' in package 'org.mazhuang.android.helloworld'
+   error: No resource identifier found for attribute 'showAsAction' in package 'org.wuaifx.android.helloworld'
    ```
 
    将该文件里的
