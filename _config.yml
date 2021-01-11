@@ -132,7 +132,7 @@ gitment:
         
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: feibuer
+    owner: wuaifx
     repo: blog-comments
     clientID: dc547669bff958a65fac
     clientSecret: 156bc42932214afe44896e8ee6125bc78bc2d8e4
