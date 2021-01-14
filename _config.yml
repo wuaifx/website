@@ -86,7 +86,7 @@ subscribe_rss: /feed.xml
 #      Jekyll      #
 # ---------------- #
 markdown: kramdown
-#kramdown:rdiscount
+kramdown:rdiscount
     input: GFM
 highlighter: rouge
 paginate: 10
