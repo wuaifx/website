@@ -100,6 +100,8 @@
   
   
   
+  
+  
 
   
     {
@@ -1052,6 +1054,62 @@
       
       "url"      : "https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/",
       "keywords" : "VSCode, macOS"
+    } ,
+  
+    {
+      "title"    : "使用PyCharm官方中文语言包汉化PyCharm",
+      "category" : "PyCharm",
+      
+      "url"      : "https://wuaifx.ga/2021/01/12/PyCharm-chinese/",
+      "keywords" : "PyCharm， windows"
+    } ,
+  
+    {
+      "title"    : "Pycharm2020.3.2 安装教程2020最新版！（内附Pycharm永久激活码）",
+      "category" : "Pycharm",
+      
+      "url"      : "https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps/",
+      "keywords" : "PyCharm, windows"
+    } ,
+  
+    {
+      "title"    : "利用Python3开发一款小工具（界面的设计）",
+      "category" : "Python",
+      
+      "url"      : "https://wuaifx.ga/2021/01/13/PublicSsoftware-project/",
+      "keywords" : "Python， windows, pycharm, 软件开发， PublicSoftwareProject"
+    } ,
+  
+    {
+      "title"    : "python安装",
+      "category" : "Python",
+      
+      "url"      : "https://wuaifx.ga/2021/01/13/Python-install/",
+      "keywords" : "Python， windows"
+    } ,
+  
+    {
+      "title"    : "pycharm的python解释器的搭建和创建第一个项目",
+      "category" : "Python",
+      
+      "url"      : "https://wuaifx.ga/2021/01/13/Python-pycharm-config/",
+      "keywords" : "Python， windows, pycharm"
+    } ,
+  
+    {
+      "title"    : "PyCharm如何使用Qt Designer",
+      "category" : "Python",
+      
+      "url"      : "https://wuaifx.ga/2021/01/13/pycharm-qt-designer/",
+      "keywords" : "Python， windows, pycharm"
+    } ,
+  
+    {
+      "title"    : "如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）",
+      "category" : "Python",
+      
+      "url"      : "https://wuaifx.ga/2021/01/14/Python-qtcn-zh/",
+      "keywords" : "Python， windows， PyQt5(designer)"
     } ,
   
     {

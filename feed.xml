@@ -1,4 +1,493 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-11T09:17:14+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">给 Mac 添加右键菜单「使用 VSCode 打开」</title><link href="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/" rel="alternate" type="text/html" title="给 Mac 添加右键菜单「使用 VSCode 打开」" /><published>2020-10-28T00:00:00+08:00</published><updated>2020-10-28T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/10/28/add-vscode-to-right-click</id><content type="html" xml:base="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/">&lt;p&gt;最终的实现效果是在文件 / 文件夹上右击时，会出现菜单项「用 VSCode 打开」，点击后会启动 Visual Studio Code 打开对应的文件 / 文件夹。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-14T14:42:10+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;p&gt;##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/p&gt;
+
+&lt;p&gt;首先直接用pip安装的PyQt-tools的Designer和windows执行程序安装的Designer，是不带翻译文件的，因此我们要把Qt creator中Designer的翻译文件拷贝到Pyqt的Designer目录中。&lt;/p&gt;
+
+&lt;p&gt;步骤1
+打开Qt creator的translations文件夹。&lt;/p&gt;
+
+&lt;p&gt;笔者的路径：F:\Qt\Qt5.11.1\Tools\QtCreator\share\qtcreator\translations&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-PyQt.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;步骤2
+把其中一个文件拷贝，designer_zh_CN.qm是简体中文，designer_zh_TW.qm是繁体中文，这里我们拷贝简体中文的翻译文件。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-PyQt0.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Ps：不想下载Qt但是又想要designer_zh_CN.qm这个翻译文件的，笔者提供下载地址&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;https://pan.baidu.com/s/1jzkumqjw-3VQiJxvo4V6Xw&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;步骤3
+将拷贝的翻译文件复制到 PyQt5 的translations文件夹中&lt;/p&gt;
+
+&lt;p&gt;笔者的路径：F:\Python\Lib\site-packages\PyQt5\Qt\translations&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-PyQt1.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;步骤4
+将拷贝的翻译文件复制到 pyqt5-tools 的translations文件夹中&lt;/p&gt;
+
+&lt;p&gt;笔者的路径：F:\Python\Lib\site-packages\pyqt5-tools\translations&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-PyQt2.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;最终结果
+此时打开PyQt5的designer就会发现界面变成中文的了。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-PyQt3.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</summary></entry><entry><title type="html">利用Python3开发一款小工具（界面的设计）</title><link href="https://wuaifx.ga/2021/01/13/PublicSsoftware-project/" rel="alternate" type="text/html" title="利用Python3开发一款小工具（界面的设计）" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/PublicSsoftware-project</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/PublicSsoftware-project/">&lt;p&gt;##简单的小例子&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+import os
+import sys
+import paramiko
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+if __name__ == '__main__':
+app = QtWidgets.QApplication(sys.argv)
+MyUI = QtWidgets.QWidget()
+MyUI.setWindowsTitle('demo')
+MyUI.resize(250, 150)
+MyUI.show()
+sys.exit(app.exec_())
+```
+
+![](/images/posts/python/PuSoftP.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;上面的图就是运行之后的小窗口，下面对代码进行分块介绍：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+``` 第一行的含义是指定python3执行，第二行指定编码方式utf-8
+
+```sh
+import os
+import sys
+import paramiko
+from PyQt5 import QtCore, QtGui, QtWidgets
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这里是导入基本的必要模块，因为需要做界面，因此我我们将PyQt模块导入。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
+app = QtWidgets.QApplication(sys.argv)
+``` 所有的PyQt5应用必须创建一个应用（Application）对象。sys.argv参数是一个来自命令行的参数列表。Python脚本可以在shell中运行。这是我们用来控制我们应用启动的一种方法。
+
+```sh
+MyUI = QtWidgets.QWidget()
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Qwidget组件是PyQt5中所有用户界面类的基础类。这里给QWidget提供了默认的构造方法。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
+MyUI.setWindowsTitle('demo')
+MyUI.resize(250, 150)
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;resize()方法调整了widget组件的大小。它现在是250px宽，150px高。
+setWindowsTitle(‘demo’)设置了我们窗口的标题，这个标题显示在标题栏中。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
+MyUI.show()
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;show()方法在屏幕上显示出widget。一个widget对象在这里第一次被在内存中创建，并且之后在屏幕上显示。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
+sys.exit(app.exec_())
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;最后，应用进入主循环。在这个地方，事件处理开始执行。主循环用于接收来自窗口触发的事件，并且转发他们到widget应用上处理。如果我们调用exit()方法或主widget组件被销毁，主循环将退出。sys.exit()方法确保一个不留垃圾的退出。系统环境将会被通知应用是怎样被结束的。&lt;/p&gt;
+
+&lt;p&gt;exec_()方法有一个下划线。因为exec是Python保留关键字。因此，用exec_()来代替。&lt;/p&gt;
+
+&lt;p&gt;##2、我们的界面&lt;/p&gt;
+
+&lt;p&gt;很多时候界面非常的复杂，我们单纯的使用代码生成，费时费力，那有没有一个简单直观的方式构造一个界面呢？
+当然是有的，还记得开发环境搭建那一章节吧，我们在pycharm里添加了一个扩展工具qt designer。我们在这里就要用到qt designer来设计我们的界面。&lt;/p&gt;
+
+&lt;p&gt;##2.1、界面规划&lt;/p&gt;
+
+&lt;p&gt;1&amp;gt;用户设置部分&lt;/p&gt;
+
+&lt;p&gt;涉及到windows代码上传到Linux中，必然包含了Linux服务器地址、用户名、密码、远程目录名、本地工程路径等。这里都放在用户设置部分。&lt;/p&gt;
+
+&lt;p&gt;2&amp;gt;命令勾选部分&lt;/p&gt;
+
+&lt;p&gt;因为小工具上传完代码后，需要根据我们勾选的命令，执行不同版本的编译。而且不同的编译命令，需要在不同的服务器上执行，这也是后续代码处理中折磨我好久的东西。&lt;/p&gt;
+
+&lt;p&gt;3&amp;gt;运行日志查看部分&lt;/p&gt;
+
+&lt;p&gt;运行中肯定是要日志的吗，不论你看或者不看，它都在那里，不增不减。而且万一出错了，这里也要能够打印出trace日志，不然没有日志让我定位，臣妾做不到啊。&lt;/p&gt;
+
+&lt;p&gt;##2.2、界面设计&lt;/p&gt;
+
+&lt;p&gt;设计步骤：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;pycharm-tools-extension tools- qt designer&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/PuSoftP0.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;到此就可以在designer里面设计页面了&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##简单的小例子</summary></entry><entry><title type="html">python安装</title><link href="https://wuaifx.ga/2021/01/13/Python-install/" rel="alternate" type="text/html" title="python安装" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/Python-install</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/Python-install/">&lt;p&gt;##python环境的搭建
+1.下载python（这里以python3.8.6为例）&lt;/p&gt;
+
+&lt;p&gt;step 1：打开下载网址：https://www.python.org/downloads/windows/&lt;/p&gt;
+
+&lt;p&gt;step 2：我这里选着python3的版本&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;step 3：选择python的可执行文件安装包&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python0.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;2.安装python（这里以python3.8.6为例）&lt;/p&gt;
+
+&lt;p&gt;step 1：下载完成后就可以安装了，基本傻瓜式安装，不过要强调几点，如下图（python3.8.6已经可以自动添加环境变量                     如果你要安装python2那么你手动配置环境变量，具体方法自行百度，这里不做赘述！）&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python1.png)
+
+![](/images/posts/python/python2.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;step 2：安装完成后，我们来检查一下python是否安装成功，打开cmd命令，输入python，回车，若显示类似下图，证明环境搭建完成。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python3.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;step 3：测试输出hello world，从开始菜单打开python自带的IDE,输入如下代码，然后回车。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;       print('hello world')
+
+![](/images/posts/python/python4.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;至此，我们的python环境搭建完成。&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##python环境的搭建 1.下载python（这里以python3.8.6为例）</summary></entry><entry><title type="html">pycharm的python解释器的搭建和创建第一个项目</title><link href="https://wuaifx.ga/2021/01/13/Python-pycharm-config/" rel="alternate" type="text/html" title="pycharm的python解释器的搭建和创建第一个项目" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/Python-pycharm-config</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/Python-pycharm-config/">&lt;p&gt;##pycharm的python解释器的搭建和创建第一个项目&lt;/p&gt;
+
+&lt;p&gt;step 1：打开pycharm并且点击设置，如下图&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-pycharm.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;step 2：由于之前我配置过，也创建过项目；所以系统把之前的默认帮我添加上了；只是现在不支持3.5了&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-pycharm0.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;step 3：然后，点击python解释器框体后面的齿轮按钮，再点击添加，如下配置，点击确定&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-pycharm1.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;step 4：下载一些文件，稍等片刻；如下图&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-pycharm2.png)
+
+![](/images/posts/python/python-pycharm3.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;step 5：完成后，如下图，点确定&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-pycharm4.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;step 6：至此安装完成&lt;/p&gt;
+
+&lt;p&gt;##pycharm的建立一个新项目&lt;/p&gt;
+
+&lt;p&gt;首先打开pycharm，接下来是一些按照顺序摆放的配置图片。完成pycharm的一个项目创建。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-pycharm-project.png)
+
+![](/images/posts/python/python-pycharm-project0.png)
+
+![](/images/posts/python/python-pycharm-project1.png)
+
+![](/images/posts/python/python-pycharm-project2.png)
+
+![](/images/posts/python/python-pycharm-project3.png)
+
+![](/images/posts/python/python-pycharm-project4.png)
+
+![](/images/posts/python/python-pycharm-project5.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;至此，pycharm已经全部安装完成。&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##pycharm的python解释器的搭建和创建第一个项目</summary></entry><entry><title type="html">PyCharm如何使用Qt Designer</title><link href="https://wuaifx.ga/2021/01/13/pycharm-qt-designer/" rel="alternate" type="text/html" title="PyCharm如何使用Qt Designer" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/pycharm-qt-designer</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/pycharm-qt-designer/">&lt;p&gt;Qt Designer 是一个 GUI 设计器，能可视化设计出界面。PyQT5 通过 pyuic5 工具将 Qt Designer 生成的 xxx.ui 文件转换成 python 代码，大大节省手工编写界面代码的工作量。&lt;/p&gt;
+
+&lt;p&gt;本篇介绍如何在 PyCharm 中集成 Qt Designer 工具，包括 QT Designer 的配置， pyuic5 的配置和调用界面代码的方法。&lt;/p&gt;
+
+&lt;p&gt;pyqt5 可以使用 pip 工具来安装：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
+pip install pyqt5
+``` 安装了 pyqt5 之后，在 python 安装目录下面的 Scripts 文件夹中，有一个 pyuic5.exe 文件，这个可执行文件用于将 Qt Designer 生成的 ui 文件转换为 python 代码。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;##安装 Qt Designer
+在 https://build-system.fman.io/qt-designer-download 这个网址可以下载和安装独立的 Qt Designer 安装版，根据操作系统选择合适的安装文件进行安装。&lt;/p&gt;
+
+&lt;p&gt;##在 PyCharm 中配置 Qt Designer
+Qt Designer 安装后，在安装目录下面有一个 designer.exe 文件。打开该程序，以拖拽的方式设计界面元素。设计完成后保存为 xxx.ui 文件。ui 文件为 xml 格式，用于描述窗体和控件的属性。&lt;/p&gt;
+
+&lt;p&gt;在 PyCharm 中配置 Qt Designer，目的是在开发的时候，在 PyCharm 中直接操作 Qt Designer，同时能方便的将 ui 文件保存到 Python 工程指定的文件夹下。通过菜单 File -&amp;gt; Settings 打开如下的配置界面，点击右键 “+” 号配置 Qt Designer:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharmqtd.png)
+
+![](/images/posts/python/pycharmqtd0.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;左边是配置的路径，右面是配置的参数：
+Program： designer.exe 的路径
+Working Directory: 设置保存的 UI 文件位置，$FileDir$ 表示文件所在目录。&lt;/p&gt;
+
+&lt;p&gt;这个配置适合调用 Qt Designer 新建窗口的情况。如果要对已经创建的 ui 文件进行编辑，为了方便，可以再新建一个配置如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharmqtd1.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;测试一下。比如在 Python 工程中新建一个 designer 文件夹，选中 designer 文件夹&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharmqtd2.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;通过菜单 Tools -&amp;gt; External Tools 菜单打开 qt designer:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharmqtd3.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;注意这里的 QT Designer Create 和 QT Designer Edit 都是我刚才配置的外部工具。在 Qt Designer 中新建一个 Main Window:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharmqtd4.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;在 Main Window 中拖拽几个控件。因为本文主要讲解 Qt Designer 的用法，所以对控件的细节不展开。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharmqtd5.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;然后将界面保存为 MainWindow.ui，路径为 designer 文件夹下面。选中 MainWindow.ui，通过菜单 Tools -&amp;gt; External Tools -&amp;gt; QT Desinger Edit，MainWindow.ui 文件被 Qt Designer 打开。Qt Designer 的配置没有问题。&lt;/p&gt;
+
+&lt;p&gt;##如何调用界面代码
+ui 转换的 python 代码随着对 ui 的变更，每次都会重新生成，所以不要在 MainWIndow.py 中编写代码。我们需要另外新建一个 python 文件，并在其中编写代码来调用界面代码。&lt;/p&gt;
+
+&lt;p&gt;我们看到，qt designer 自动生成的代码实现了一个名为 UI_MainWindow 的类，这个类继承自 object，在该类的 setupUi() 方法中有一个名为 MainWindow 的参数，我们需要将真正的 QMainWindow 对象传给这个方法，来实现我们自己的主窗口。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
+from designer.MainWindow import Ui_MainWindow
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow
+
+if __name__ == '__main__':
+# application 对象
+app = QApplication(sys.argv)
+
+# QMainWindow对象
+mainwindow = QMainWindow()
+
+# 这是qt designer实现的Ui_MainWindow类
+ui_components = Ui_MainWindow()
+# 调用setupUi()方法，注册到QMainWindwo对象
+ui_components.setupUi(mainwindow)
+
+# 显示
+mainwindow.show()
+
+sys.exit(app.exec_())
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">Qt Designer 是一个 GUI 设计器，能可视化设计出界面。PyQT5 通过 pyuic5 工具将 Qt Designer 生成的 xxx.ui 文件转换成 python 代码，大大节省手工编写界面代码的工作量。</summary></entry><entry><title type="html">使用PyCharm官方中文语言包汉化PyCharm</title><link href="https://wuaifx.ga/2021/01/12/PyCharm-chinese/" rel="alternate" type="text/html" title="使用PyCharm官方中文语言包汉化PyCharm" /><published>2021-01-12T00:00:00+08:00</published><updated>2021-01-12T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/12/PyCharm-chinese</id><content type="html" xml:base="https://wuaifx.ga/2021/01/12/PyCharm-chinese/">&lt;p&gt;对于英文不行我来说使用英文版PyCharm实在是太难受了，网上好多汉化补丁都是网友提供了，下面为大家介绍一种PyCharm官方中文语言包汉化方法&lt;/p&gt;
+
+&lt;p&gt;在PyCharm主窗口中点击菜单栏中的File菜单下的Settings…菜单进入PyCharm设置窗口，如下图&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm-ch.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;PyCharm设置窗口，如下图。点击下图标注1 Plugins选项进入PyCharm插件管理窗口，在下图标注2处输入“chinese”系统会自动搜索相关插件，找到如下图标注3处所示的chinese(simplified) language pack eap插件安装此插件（点击下图标注4处 Install按钮）&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm-ch0.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;PyCharm中文语言插件安装完成后需要重启PyCharm，如下图所示。点击下图标注1或2处 RESTART IDE按钮重启PyCharm&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm-ch1.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;点击上图标注1或2处 Restart IDE按钮重启PyCharm后弹出确认重启提示窗，如下图。点击下图标注1处 Restart按钮确认重启PyCharm&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm-ch2.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;完成重启后PyCharm主窗口成功改为中文，如下图。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm-ch3.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;##PyCharm汉化成功后如果我们想改回英文的该如何操作呢？&lt;/p&gt;
+
+&lt;p&gt;依然是在PyCharm的设置窗口中的Plugins选项中如，下图所示&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm-ch4.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;点击上图标注1 Plugins选项进入插件管理窗口，点击上图标注2处的 Installed选项显示所有已安装PyCharm插件，找到并选中已安装的PyCharm中文语言插件上图标注3，点击上图标注4处 Disable按钮关闭PyCharm中文语言插件，然后点击上图标注5处 确定按钮重启PyCharm，重启后PyCharm又恢复到了英文状态。&lt;/p&gt;
+
+&lt;p&gt;再次改为中文只需按此操作打开PyCharm中文语言插件即可&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="PyCharm" /><summary type="html">对于英文不行我来说使用英文版PyCharm实在是太难受了，网上好多汉化补丁都是网友提供了，下面为大家介绍一种PyCharm官方中文语言包汉化方法</summary></entry><entry><title type="html">Pycharm2020.3.2 安装教程2020最新版！（内附Pycharm永久激活码）</title><link href="https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps/" rel="alternate" type="text/html" title="Pycharm2020.3.2 安装教程2020最新版！（内附Pycharm永久激活码）" /><published>2021-01-12T00:00:00+08:00</published><updated>2021-01-12T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps</id><content type="html" xml:base="https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps/">&lt;p&gt;&amp;lt;font color=#red size=4 face=”黑体”&amp;gt;关注博主微信公众号：Python联盟，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~&amp;lt;/font&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;PyCharm 是我用过的python编辑器中，比较顺手的一个。而且可以跨平台，在macos和windows下面都可以用，这点比较好。是python现在最好用的编辑器，没有之一。&lt;/p&gt;
+
+&lt;p&gt;笔者使用PyCharm2020.3.2，请根据机器是64位还是32位来选择对应的PyCharm版本。（相信绝大部分人都可以很从容的来查看自己机器的位数，在这里就不赘述了，如果不清楚自己可以百度一下就可以）&lt;/p&gt;
+
+&lt;p&gt;可以去PyCharm官网：https://www.jetbrains.com 下载对应机器的安装包。&lt;/p&gt;
+
+&lt;p&gt;##安装包下载&lt;/p&gt;
+
+&lt;p&gt;第一步：进入PyCharm官网，点击开发者工具，如下图所示：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/PyCharm.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第二步：点击“PyCharm”，进入安装包现在页面，如下图所示：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm0.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第三步：点击“DOWNLOAD NOW”，根据自己需要下载匹配的操作系统的安装包，如下图所示：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm1.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第四步：等待安装包下载完，运行即可。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm2.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;##python安装过程
+ 第一步：找到下载好的PyCharm安装包，如下图所示“&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm3.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第二步：双击已下载的PyCharm安装包，出现如下图所示的界面，点击“next”&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm4.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第三步：选择安装目录，Pycharm需要的内存较多，建议将其安装在D盘或者E盘，不建议放在系统盘C盘：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm5.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第四步：点击Next，进入下图的界面：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm6.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;##数字1：
+create desktop shortcut（创建桌面快捷方式），系统32位就选32-bit,系统64位就选64-bit。现在大多数都是64位了，不清楚系统类型：我的电脑=》右键=》属性&lt;/p&gt;
+
+&lt;p&gt;笔者的电脑是64位系统，所以选择64位。&lt;/p&gt;
+
+&lt;p&gt;##数字2：
+update path variable(restart needed)更新路径变量(需要重新启动)，add launchers dir to the path（将启动器目录添加到路径中）。上一个PyCharm版本没有的，所以没有选择。&lt;/p&gt;
+
+&lt;p&gt;##数字3：
+update context menu（更新上下文菜单），add open folder as project（添加打开文件夹作为项目）。上一个PyCharm版本没有的，所以没有选择。&lt;/p&gt;
+
+&lt;p&gt;##数字4：
+create associations 创建关联，关联.py文件，双击都是以pycharm打开。&lt;/p&gt;
+
+&lt;p&gt;##数字5：
+不要选，我第一次安装的时候就是勾选了，差点放弃。pycharn是国外的软件，网站就是国外，下载速度很慢。有人选上等一两个小时，我等半小时，直接强制关掉。没勾选安装很快完成。把数字1和数字4勾选就好，数字2和数字3看你自己需求。（数字5如果有需求，自己可以单独去官网下载安装JRE）&lt;/p&gt;
+
+&lt;p&gt;第五步：点击Next，进入下图界面：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm7.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;默认安装即可，直接点击Install。&lt;/p&gt;
+
+&lt;p&gt;第六步：耐心的等待两分钟左右，如下图：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm8.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第七步：之后就会得到下面的安装完成的界面：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm9.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第八步：点击Finish，Pycharm安装完成。接下来对Pycharm进行配置，双击运行桌面上的Pycharm图标，进入下图界面：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm10.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;从哪里导入pycharm设置，直接第三个（Do not import settings），以后还可以导入。选择Do not import settings，之后选择OK，进入下一步。&lt;/p&gt;
+
+&lt;p&gt;第九步：勾选I confirm that……. ，界面如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm11.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第十步：点击“continue”，界面如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm12.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第十一步：数据分享，界面如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm13.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这个相当于一个问卷调查吧，看自己愿不愿将信息发送JetBrains来提升他们产品的质量&lt;/p&gt;
+
+&lt;p&gt;第十二步：点击“send”或者“Don’t send”。进入如下界面：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm14.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;皮肤选择，建议选择Darcula主题，该主题更有利于保护眼睛，而且看上去也非常不错~~~&lt;/p&gt;
+
+&lt;p&gt;第十三步：可以右上角关掉，也可以左下角：skip remaining and set defaults（跳过其余和设置默认值）&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm15.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第十四步：点击左下角：skip remaining and set defaults（跳过其余和设置默认值）进入激活界面，选择第二个License server，如下图所示：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm16.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Active 激活分为三种：
+1、JetBrains Account 账户激活；
+2、Activation code激活码（推荐亲测）；
+3、License server授权服务器激活（推荐）&lt;/p&gt;
+
+&lt;p&gt;Evaluate试用 一般是30天，不推荐&lt;/p&gt;
+
+&lt;p&gt;国内一般都是破解激活，到此安装已完成，具体激活请看激活的随笔。&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Pycharm" /><summary type="html">&amp;lt;font color=#red size=4 face=”黑体”&amp;gt;关注博主微信公众号：Python联盟，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~&amp;lt;/font&amp;gt;</summary></entry><entry><title type="html">给 Mac 添加右键菜单「使用 VSCode 打开」</title><link href="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/" rel="alternate" type="text/html" title="给 Mac 添加右键菜单「使用 VSCode 打开」" /><published>2020-10-28T00:00:00+08:00</published><updated>2020-10-28T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/10/28/add-vscode-to-right-click</id><content type="html" xml:base="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/">&lt;p&gt;最终的实现效果是在文件 / 文件夹上右击时，会出现菜单项「用 VSCode 打开」，点击后会启动 Visual Studio Code 打开对应的文件 / 文件夹。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/posts/mac/open-with-vscode.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -273,1066 +762,4 @@
 
 &lt;p&gt;最后推荐一个我觉得不错的学习资源吧，作为野路子出身系统入门挺好：&lt;/p&gt;
 
-&lt;p&gt;李在福《追球》全集：&lt;a href=&quot;https://v.youku.com/v_show/id_XMjczOTAyODI4.html&quot;&gt;https://v.youku.com/v_show/id_XMjczOTAyODI4.html&lt;/a&gt;&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Blog" /><summary type="html">昨天朋友圈和微博上有不少人在转发林丹从国家队退役的消息，有一点感慨的同时，我在想，以后新入坑的羽毛球迷们，可能渐渐就都不知道「超级丹」、「林李大战」，还有「四大天王」这些名词了吧。</summary></entry><entry><title type="html">更聪明地学习，而不是苦读——《如何高效学习》</title><link href="https://wuaifx.ga/2020/05/17/learn-more-study-less/" rel="alternate" type="text/html" title="更聪明地学习，而不是苦读——《如何高效学习》" /><published>2020-05-17T00:00:00+08:00</published><updated>2020-05-17T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/05/17/learn-more-study-less</id><content type="html" xml:base="https://wuaifx.ga/2020/05/17/learn-more-study-less/">&lt;p&gt;我们可能都听过一句话：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;吾生也有涯，而知也无涯。以有涯随无涯，殆已！——《庄子. 内篇. 养生主第三》&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;所以，需要持续大量学习的童鞋，比方说我等程序员们，除了要从知识的海洋中精挑细选出我们想要的内容，挑完了还得高效学习，不然成长的速度可能远远赶不上脱发的速度，沦落到「他变秃了，也没变强」的尴尬境地。&lt;/p&gt;
-
-&lt;p&gt;更聪明地学习，而不是苦读——这是我打开 Kindle for Mac 后看到的第一句话，最近读的这本 &lt;a href=&quot;https://book.douban.com/subject/25783654/&quot;&gt;《如何高效学习》&lt;/a&gt; 正是一本关于此话题的书。&lt;/p&gt;
-
-&lt;h2 id=&quot;关于本书&quot;&gt;关于本书&lt;/h2&gt;
-
-&lt;p&gt;作者 Scott H. Young，这哥们是个神人，超级学霸，比较广为人知的事迹是他的 &lt;a href=&quot;https://www.scotthyoung.com/blog/myprojects/mit-challenge-2/&quot;&gt;MIT Challenge&lt;/a&gt;，用一年的时间自学完 MIT 计算机专业四年 33 门课程（当然，他不是 MIT 的学生，没有拿到学位）。有关他的更多信息可以访问 &lt;a href=&quot;https://www.scotthyoung.com/&quot;&gt;Scott H. Young&lt;/a&gt; 了解。&lt;/p&gt;
-
-&lt;p&gt;这本书里就是介绍他自己总结的学习方法，主要就是所谓「整体性学习」。&lt;/p&gt;
-
-&lt;p&gt;在开始读书笔记之前我忍不住要先来一段吐槽。&lt;/p&gt;
-
-&lt;h2 id=&quot;前置吐槽&quot;&gt;前置吐槽&lt;/h2&gt;
-
-&lt;p&gt;这本书的英文原书名为 &lt;a href=&quot;https://book.douban.com/subject/11603298/&quot;&gt;Learn More, Study Less&lt;/a&gt;，豆瓣评分 8.0，中文版叫 &lt;a href=&quot;https://book.douban.com/subject/25783654/&quot;&gt;《如何高效学习》&lt;/a&gt;，豆瓣评分 7.4，这中间差的 0.6 分，看了一些书评，我估计很多读者会认为是被译者吃了，豆瓣上有好些网友在 &lt;a href=&quot;https://book.douban.com/subject/25783654/comments/&quot;&gt;跪求译者不要再译书了&lt;/a&gt;。:cry:&lt;/p&gt;
-
-&lt;p&gt;我……也有点这种感觉。奈何我啃英文太慢了，所以还是先看了中文版，然后才找到原著对照理解了部分内容，英文阅读水平还行的同学建议直接读原著。&lt;/p&gt;
-
-&lt;p&gt;以下是我阅读中文版过程中想吐槽的一些点：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;过多不必要的「译者注」，而且是放在正文里的；&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/images/blog/learn-more-study-less-s.s.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-    &lt;p&gt;比如这里，整整一页的译者注，但实际注解得并不好，也无必要。&lt;/p&gt;
-
-    &lt;p&gt;适当的留白和思考空间留给读者自己可能更好。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;「导读」里花了几页来讲的「吃饭模型学习法」，可以看出是想应用书中大力推崇的比喻，但用得牵强附会了，并无助于理解，放在书的开头反而让人纳闷；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;同一个场景下的同一名词，在书中有不同的翻译；&lt;/p&gt;
-
-    &lt;p&gt;比如整体学习的五个阶段里的第二阶段有时被翻译为「理解」，有时被翻译为「明白」。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;有翻译错误 / 不准确的情况；&lt;/p&gt;
-
-    &lt;p&gt;比如，整体学习的五个阶段，这是非常重要的信息，但是，原文：&lt;/p&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;Explore - The Explore Phase is really where holistic learning takes full force. Here you form the models, highways and broader connections needed for well defined constructs.&lt;/p&gt;
-    &lt;/blockquote&gt;
-
-    &lt;p&gt;译文：&lt;/p&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;拓展 - 拓展阶段是整体性学习中最花力气的地方，这一步将形成模型、高速公路和广泛和联系，从而获得良好的结构。&lt;/p&gt;
-    &lt;/blockquote&gt;
-
-    &lt;p&gt;我得说，这真不如机器翻译的：&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/images/blog/learn-more-study-less-machine-translate.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;正文中有一些关于学习医学的例子，原著中并没有，是译者自行添加的。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;好了吐槽完毕，记笔记记笔记。&lt;/p&gt;
-
-&lt;h2 id=&quot;读书笔记&quot;&gt;读书笔记&lt;/h2&gt;
-
-&lt;h3 id=&quot;摘录&quot;&gt;摘录&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;所谓的聪明是指能学得更快、记得更多更牢，而且信息的组织非常适合完成自己的目标。——Scott H. Young 对聪明的定义&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;整体性学习的基础就是将知识关联起来以达到记忆和应用知识的目的，开始学习的最佳技术是比喻、内在化、基于流程的记事和画图表法，这些方法构成了整体性学习的基础。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;要想超出知识本身，光有热情还不够，你要寻找各种应用知识的途径（即使现在讨厌它），知识因“用”而获得新的意义。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;比喻就是在不熟悉的知识和熟悉的知识之间架起一座沟通的桥梁。&lt;/p&gt;
-
-  &lt;p&gt;莱考夫把隐喻定义为“以一种事物认知另一种事物”，而这恰恰就是学习的本质。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;知识点&quot;&gt;知识点&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;整体性学习相关的概念&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;机械记忆 VS 整体性学习——死记硬背 VS 将各种知识相互关联，建立信息的网络。&lt;/p&gt;
-
-&lt;p&gt;整体性学习基于三个主要思想：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;结构：结构就是一系列紧密联系的知识；（城市）&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;模型：模型是结构的快照，更为简单和更易储存；（结构的抽象）&lt;/p&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;模型有很多种形式，但是目标总是同样的：那就是压缩信息。&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;高速公路：结构与结构之间的联系；（城市之间的高速公路）&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;整体性学习的阶段与顺序：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/holistic-learning-sequence.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;信息结构（分类）：&lt;/p&gt;
-
-&lt;p&gt;Scott 将信息作以下分类，学习新的知识时，首先判断信息主要属于哪一类，然后采取对应的处理方法。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/information-structure.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;整体性学习的技术&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;作者在书中也多次提到，这些技术如果只是了解而不去练习和实践，是没有什么用的。书中提供了很多「智力挑战」，具体请参考原著。&lt;/p&gt;
-
-&lt;p&gt;Part 1 获取知识&lt;/p&gt;
-
-&lt;p&gt;一、快速阅读&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;指读法&lt;/p&gt;
-
-    &lt;p&gt;对就是你想的那个指读法。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;练习阅读法&lt;/p&gt;
-
-    &lt;p&gt;类似我们以前做阅读理解的练习，目的是训练自己以尽可能快的速度理解所读内容。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;积极阅读法&lt;/p&gt;
-
-    &lt;p&gt;强调深入地理解材料，类似于所谓「精读」，每读完一小部分都对应做一些笔记。&lt;/p&gt;
-
-    &lt;p&gt;积极阅读时带着三个问题：&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;这部分的主要知识点是什么？&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;怎样才能记住主要知识点？（联系、视觉化和比喻）&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;怎样将知识点应用到实际情境中？&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;二、笔记流&lt;/p&gt;
-
-&lt;p&gt;尽量简短地写下主要知识点（找重点），然后用箭头将它们联系起来，可以结合简易图像、表格。&lt;/p&gt;
-
-&lt;p&gt;Part 2 联系观点&lt;/p&gt;
-
-&lt;p&gt;主要处理困难信息（抽象信息、随意信息等）和关键信息（构成学习其它知识的基础）。&lt;/p&gt;
-
-&lt;p&gt;一、比喻&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;在不熟悉的知识和熟悉的知识之间架起一座沟通的桥梁。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;二、内在化&lt;/p&gt;
-
-&lt;p&gt;调用各种感知与知识联系在一起，比如视觉（脑海中出现图像）、听觉、触觉和情感等。&lt;/p&gt;
-
-&lt;p&gt;三、简图法&lt;/p&gt;
-
-&lt;p&gt;将多个信息压缩成一幅简图。主要可以借助流程图（步骤、脑图）、概念图（知识点及联系）和涂鸦。&lt;/p&gt;
-
-&lt;p&gt;Part 3 随意信息的处理&lt;/p&gt;
-
-&lt;p&gt;一、联想法&lt;/p&gt;
-
-&lt;p&gt;将一系列知识点串连在一起，就像链条，一旦进入链条中的一环，就可以轻易地到达链条中的其它环节。&lt;/p&gt;
-
-&lt;p&gt;二、挂钩法&lt;/p&gt;
-
-&lt;p&gt;建立你自己的基本数字字典，然后将要记忆的信息与这些数字联系在一起，再查字典用数字的含义编一个小故事。（这玩意作为一个记忆方法太绕了，是否真有人这样用我表示怀疑）&lt;/p&gt;
-
-&lt;p&gt;三、信息压缩技术&lt;/p&gt;
-
-&lt;p&gt;储存大量随意信息的方法，目标是精简信息，寻找逻辑关系。&lt;/p&gt;
-
-&lt;p&gt;三种方法：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;记忆术——用一个短语或者单词来储存数个信息的方法。&lt;/p&gt;
-
-    &lt;p&gt;如用各单词的首字母拼成一个简单通用的短语或单词。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;图像联系——我感觉同上面提到的「简图法」。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;笔记压缩——将很多知识压缩到几页笔记里，试图快速掌握大量材料。&lt;/p&gt;
-
-    &lt;p&gt;用小字将主要知识点及与之相联系的重要内容写下来，结合简图。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Part 4 知识扩展&lt;/p&gt;
-
-&lt;p&gt;一、实际应用&lt;/p&gt;
-
-&lt;p&gt;总是努力把知识应用于实际，会记得更牢。&lt;/p&gt;
-
-&lt;p&gt;比如：在一堆东西里快速找到想要的那个，可以考虑用二分法。&lt;/p&gt;
-
-&lt;p&gt;二、模型纠错&lt;/p&gt;
-
-&lt;p&gt;在练习和实践中发现问题、纠正问题。&lt;/p&gt;
-
-&lt;p&gt;三、基于项目的学习&lt;/p&gt;
-
-&lt;p&gt;设定一个合适大小的目标，做好计划，围绕着目标学习。&lt;/p&gt;
-
-&lt;p&gt;作者的几点建议：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;目标不要太大，可以试试 1-3 个月的项目；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;将工作进度和过程记录下来，看着已经完成的工作可以增强信息和继续下去的欲望；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;目标要有意义。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;费曼技巧&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;这部分貌似在英文原著里没有，但我觉得挺重要的。&lt;/p&gt;
-
-&lt;p&gt;简而言之，就是假设你要给一名小白讲解这个知识点，用尽量简洁的表述让他听懂，如果有不知道如何表述的地方，那就回过头把它搞懂。&lt;/p&gt;
-
-&lt;p&gt;让我想起不知道在哪看的一句话：「我讲的你听懂了，代表我掌握了，不是你」。&lt;/p&gt;
-
-&lt;p&gt;还想起是不是华罗庚也经常用这个法子……&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;超越整体性学习&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;一、高效秘籍&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/efficient-cheats.png&quot; alt=&quot;高效秘籍&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;二、自我教育&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/educate-yourself.png&quot; alt=&quot;自我教育&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;一些自我教育的网上资源：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;MIT OpenCourseWare&lt;/li&gt;
-  &lt;li&gt;EHow.com&lt;/li&gt;
-  &lt;li&gt;FreeEd.net&lt;/li&gt;
-  &lt;li&gt;Portal to Free Online Courses&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;书籍和网站&quot;&gt;书籍和网站&lt;/h3&gt;
-
-&lt;p&gt;书中提到了很多书籍，在第三部分的最后一节里也列举了一些高效率相关的网址和书籍，收集如下：&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;书籍&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/2031439/&quot;&gt;Breakthrough Rapid Reading&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/26298597/&quot;&gt;我们赖以生存的隐喻&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/1316569/&quot;&gt;Getting Things Done&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/1884867/&quot;&gt;The Power of Full Engagement&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/3296364/&quot;&gt;Zen To Done&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/2516411/&quot;&gt;How to Become a Straight-A Student&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/2301314/&quot;&gt;How to Win at College&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;网址&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ScottHYoung.com&lt;/li&gt;
-  &lt;li&gt;ZenHabits.net&lt;/li&gt;
-  &lt;li&gt;Lifehack.org&lt;/li&gt;
-  &lt;li&gt;PickTheBrain.com&lt;/li&gt;
-  &lt;li&gt;StudyHacks&lt;/li&gt;
-  &lt;li&gt;StevePavlina.com&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/25783654/&quot;&gt;https://book.douban.com/subject/25783654/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/11603298/&quot;&gt;https://book.douban.com/subject/11603298/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/20571226&quot;&gt;https://www.zhihu.com/question/20571226&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.scotthyoung.com/blog/myprojects/mit-challenge-2/#6&quot;&gt;https://www.scotthyoung.com/blog/myprojects/mit-challenge-2/#6&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.scotthyoung.com/&quot;&gt;https://www.scotthyoung.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/23043048&quot;&gt;https://www.zhihu.com/question/23043048&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/pub/book/119554615&quot;&gt;https://www.zhihu.com/pub/book/119554615&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.scotthyoung.com/blog/2008/02/06/20-tips-for-batching-to-save-time-and-cut-stress/&quot;&gt;https://www.scotthyoung.com/blog/2008/02/06/20-tips-for-batching-to-save-time-and-cut-stress/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Blog" /><summary type="html">我们可能都听过一句话：</summary></entry><entry><title type="html">用 Vim 编辑 Markdown 时直接粘贴图片</title><link href="https://wuaifx.ga/2020/05/04/paste-image-in-vim/" rel="alternate" type="text/html" title="用 Vim 编辑 Markdown 时直接粘贴图片" /><published>2020-05-04T00:00:00+08:00</published><updated>2020-05-04T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/05/04/paste-image-in-vim</id><content type="html" xml:base="https://wuaifx.ga/2020/05/04/paste-image-in-vim/">&lt;p&gt;我习惯使用 Vim 编辑 Markdown 文件，一直存在一个痛点就是粘贴图片很不方便。&lt;/p&gt;
-
-&lt;h2 id=&quot;前后对比&quot;&gt;前后对比&lt;/h2&gt;
-
-&lt;p&gt;我以前常用的操作流程：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;复制图片/截图；&lt;/li&gt;
-  &lt;li&gt;在保存图片对话框里一层层点选保存路径，输入文件名保存；&lt;/li&gt;
-  &lt;li&gt;回到 Vim 里，手动输入引用图片的表达式。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;第 2 步和第 3 步是比较痛苦的，尤其是文件路径比较深的时候，可能要点选好几次。&lt;/p&gt;
-
-&lt;p&gt;最近偶然发现的一个外国小伙写的插件 md-img-paste.vim&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;，能比较好地解决这个问题。现在的操作流程：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;复制图片/截图；&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;在 Vim 里输入图片相对路径，自动保存图片并插入引用图片的表达式。&lt;/p&gt;
-
-    &lt;p&gt;&lt;em&gt;注：也可以直接回车，会按默认规则生成文件名。&lt;/em&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;效果演示：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wuaifx/blog-assets/md-img-paste-example.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;使用方法&quot;&gt;使用方法&lt;/h2&gt;
-
-&lt;h3 id=&quot;安装&quot;&gt;安装&lt;/h3&gt;
-
-&lt;p&gt;这个插件没有其它依赖，使用自己习惯的插件管理方式安装就好。&lt;/p&gt;
-
-&lt;p&gt;比如我使用 Vundle&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;，在 vimrc 里添加如下内容，然后 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:so $MYVIMRC&lt;/code&gt; 再 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:PluginInstall&lt;/code&gt; 就好了。&lt;/p&gt;
-
-&lt;div class=&quot;language-viml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Plugin &lt;span class=&quot;s1&quot;&gt;'ferrine/md-img-paste.vim'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;配置&quot;&gt;配置&lt;/h3&gt;
-
-&lt;p&gt;插件没有给粘贴剪贴板里的图片的操作绑定默认快捷键，需要自己绑定一下，比如我是绑定到 &lt;kbd&gt;\&amp;lt;leader\&amp;gt;i&lt;/kbd&gt;：&lt;/p&gt;
-
-&lt;div class=&quot;language-viml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autocmd &lt;span class=&quot;nb&quot;&gt;FileType&lt;/span&gt; markdown nmap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;buffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;silent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; mdip#MarkdownClipboardImage&lt;span class=&quot;p&quot;&gt;()&amp;lt;&lt;/span&gt;CR&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;另外还有两个可选配置项：&lt;/p&gt;
-
-&lt;div class=&quot;language-viml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;g:mdip_imgdir&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'.'&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&quot; let g:mdip_imgname = 'image'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;g:mdip_imgdir&lt;/code&gt; 对应图片保存路径前缀。我设置为了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt;，然后总是输入相对当前文件的路径；&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;g:mdip_imgname&lt;/code&gt; 对应图片保存时的缺省文件名前缀，即粘贴图片时，如果不输入文件名直接回车，将保存为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;前缀&amp;gt;_日期-时间.png&lt;/code&gt; 名称的文件。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;我的完整 Vim 配置文件托管在 GitHub&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;，供参考。&lt;/p&gt;
-
-&lt;p&gt;It’s done, enjoy it.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://github.com/ferrine/md-img-paste.vim&quot;&gt;https://github.com/ferrine/md-img-paste.vim&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://github.com/VundleVim/Vundle.vim&quot;&gt;https://github.com/VundleVim/Vundle.vim&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://github.com/wuaifx/config-files/blob/master/_vimrc&quot;&gt;https://github.com/wuaifx/config-files/blob/master/_vimrc&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Vim" /><summary type="html">我习惯使用 Vim 编辑 Markdown 文件，一直存在一个痛点就是粘贴图片很不方便。</summary></entry><entry><title type="html">本博客模板常见问题 Q &amp;amp; A</title><link href="https://wuaifx.ga/2020/05/03/blog-template-qna/" rel="alternate" type="text/html" title="本博客模板常见问题 Q &amp;amp; A" /><published>2020-05-03T00:00:00+08:00</published><updated>2020-05-03T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/05/03/blog-template-qna</id><content type="html" xml:base="https://wuaifx.ga/2020/05/03/blog-template-qna/">&lt;p&gt;使用这个博客模板的朋友们时不时会提出一些问题，我将它们以及对应的解决方案逐渐整理归纳，汇总到这一篇帖子里。&lt;/p&gt;
-
-&lt;h2 id=&quot;如何本地预览&quot;&gt;如何本地预览&lt;/h2&gt;
-
-&lt;p&gt;参考 GitHub 的官方说明：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/&quot;&gt;Setting up your Pages site locally with Jekyll&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;本地预览报错-undefined-method-map-for-false&quot;&gt;本地预览报错 undefined method map for false&lt;/h2&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;GitHub Metadata: Failed to open TCP connection to api.github.com:443 (Connection refused - connect(2) for &quot;api.github.com&quot; port 443)
-Liquid Exception: undefined method `map' for false:FalseClass Did you mean? tap in /_layouts/page.html
-jekyll 3.8.5 | Error:  undefined method `map' for false:FalseClass
-Did you mean?  tap
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;undefined method `map` for false:FalseClass&lt;/code&gt; 这条报错之前总是伴随着 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Failed to open TCP connection to api.github.com:443&lt;/code&gt; 一起出现，是在获取 GitHub Metadata 出错后，导致这一句报错：&lt;/p&gt;
-
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;repos&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;public_repositories&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;stargazers_count&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;解决方法：&lt;/p&gt;
-
-&lt;p&gt;模板里主要是 _includes/sidebar-popular-repo.html 和 _pages/open-source.md 两个文件里用到了 Metadata，将以上这一句前的判断条件做一下修改后问题解决，将&lt;/p&gt;
-
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;public_repositories&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;改为&lt;/p&gt;
-
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;public_repositories&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;模板最新代码已经做了修改。&lt;/p&gt;
-
-&lt;h2 id=&quot;是否支持画流程图时序图mermaid-和-mathjax&quot;&gt;是否支持画流程图、时序图、mermaid 和 MathJax&lt;/h2&gt;
-
-&lt;p&gt;支持。因为相关的引入文件比较大可能影响加载速度，没有默认对所有文件开启，需要在要想开启的文件的 Front Matter 里加上声明：&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;flow&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;sequence&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;mermaid&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;mathjax&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;以上四个开关分别对应 flowchart.js（流程图）、sequence-diagram.js（时序图）、mermaid 和 MathJax 的支持，按需开启即可，然后就可以在正文里正常画图了，展示效果可以参见 &lt;a href=&quot;https://wuaifx.ga/wiki/markdown/&quot;&gt;https://wuaifx.ga/wiki/markdown/&lt;/a&gt;，对应写法参考源文件 &lt;a href=&quot;https://github.com/wuaifx/wuaifx.github.io/blob/master/_wiki/markdown.md&quot;&gt;https://github.com/wuaifx/wuaifx.github.io/blob/master/_wiki/markdown.md&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h2 id=&quot;如何修改代码高亮风格&quot;&gt;如何修改代码高亮风格&lt;/h2&gt;
-
-&lt;p&gt;可以通过 _config.yml 文件里的配置项 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;highlight_theme&lt;/code&gt; 来指定代码高亮风格，支持的风格名称列表参考我维护的另一个项目：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/wuaifx/rouge-themes&quot;&gt;https://github.com/wuaifx/rouge-themes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;在项目主页可以看到每种风格的预览效果。&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="GitHub" /><summary type="html">使用这个博客模板的朋友们时不时会提出一些问题，我将它们以及对应的解决方案逐渐整理归纳，汇总到这一篇帖子里。</summary></entry><entry><title type="html">使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源</title><link href="https://wuaifx.ga/2020/05/01/cdn-for-github-pages/" rel="alternate" type="text/html" title="使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源" /><published>2020-05-01T00:00:00+08:00</published><updated>2020-05-01T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/05/01/cdn-for-github-pages</id><content type="html" xml:base="https://wuaifx.ga/2020/05/01/cdn-for-github-pages/">&lt;p&gt;挺久以前就有网友给我的 GitHub Pages 博客模板提 &lt;a href=&quot;https://github.com/wuaifx/wuaifx.github.io/issues/65&quot;&gt;Issue&lt;/a&gt;，说希望能增加 CDN 用于加速静态资源的加载，由于懒，一直没有动。&lt;/p&gt;
-
-&lt;p&gt;最近偶尔要打开自己博客看下 Wiki 的时候，要等挺久，比较痛苦，碰巧昨天晚上看到这样一篇帖子：&lt;a href=&quot;https://hacpai.com/article/1583894928771&quot;&gt;GitHub 图床的正确用法，通过 jsDelivr CDN 全球加速&lt;/a&gt;，感觉很适合我的需求场景，于是决定趁这几天休假将这个改造一下。&lt;/p&gt;
-
-&lt;h2 id=&quot;先看效果&quot;&gt;先看效果&lt;/h2&gt;
-
-&lt;p&gt;以下改造前后的加载情况都是在 Edge 浏览器禁用缓存后录制的，录制时间段很接近，从本地访问两个 GitHub Pages 服务的原始响应速度应该类似。&lt;/p&gt;
-
-&lt;h3 id=&quot;改造前加载&quot;&gt;改造前加载&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/github/cdn-before.png&quot; alt=&quot;before use cdn&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;注：由于改造前没有保留加载图，所以这是截的一个使用相同模板的朋友的首页加载情况。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;可以看到耗时最长的两个请求时间达到了 12 秒左右，而且很多资源的加载时间在 1 秒以上，页面完成加载时间长达 15 秒多……估计一般的访客是没这个耐心等待的。&lt;/p&gt;
-
-&lt;h3 id=&quot;改造后加载&quot;&gt;改造后加载&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/github/cdn-after.png&quot; alt=&quot;after use cdn&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;这样一对比效果还是很明显的。改造过后耗时最长的是两个没办法走 CDN 的请求，而走 CDN 的那些资源加载时间基本都没超过 60 毫秒，页面完成加载时间缩短到了 3 秒以内。&lt;/p&gt;
-
-&lt;p&gt;当然，因为页面自身还是在 GitHub Pages 托管，有时候首个请求还是会挺久才返回。&lt;/p&gt;
-
-&lt;p&gt;改造后的效果可以打开 &lt;a href=&quot;https://wuaifx.ga&quot;&gt;https://wuaifx.ga&lt;/a&gt; 体验。&lt;/p&gt;
-
-&lt;h2 id=&quot;方案考虑&quot;&gt;方案考虑&lt;/h2&gt;
-
-&lt;p&gt;优化独立博客的加载速度有一些不同的思路，对应不同的方案：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;优化博客代码，精简需要加载的资源；&lt;/li&gt;
-  &lt;li&gt;将博客部署到国内访问快的服务器上；&lt;/li&gt;
-  &lt;li&gt;部署到国内的代码托管平台，比如 Gitee 和 Coding 等；&lt;/li&gt;
-  &lt;li&gt;采用 CDN 加速；&lt;/li&gt;
-  &lt;li&gt;等等。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;其中 2 和 3 我不想考虑，还是期望只在 GitHub 上管理博客，所以 1 和 4 是优化方向，本文对应的就是 4 的部分。&lt;/p&gt;
-
-&lt;p&gt;而采用 CDN 加速的方案，可以考虑&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;将公共库改为直接引用公共 CDN 链接；&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;自己编写和修改的静态资源自己去托管在一个 CDN 服务上。&lt;/p&gt;
-
-    &lt;p&gt;有一些 CDN 服务商提供一定的免费额度，可以按喜好选用，或者选择付费服务。这里我没有纠结，看完文首提到的那篇文章，去看了下 jsDelivr 的介绍后觉得靠谱：它原生支持使用 GitHub 项目里的资源，什么都不用配置，更重要的是免费，在国内有节点，而且速度还不错（官网上也把 works in China 作为一个卖点的），遂决定直接用它。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;jsdelivr-支持的-github-资源的方式&quot;&gt;jsDelivr 支持的 GitHub 资源的方式&lt;/h2&gt;
-
-&lt;p&gt;jsDelivr 对 GitHub 的支持是作为重要特性来宣传的，官网的介绍链接：&lt;a href=&quot;https://www.jsdelivr.com/features#gh&quot;&gt;https://www.jsdelivr.com/features#gh&lt;/a&gt;，以下是一些认为需要了解的知识的小结：&lt;/p&gt;
-
-&lt;p&gt;这里以我托管博客的 GitHub 仓库为例，地址是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://github.com/wuaifx/wuaifx.github.io&lt;/code&gt;，那它里面的资源可以直接以 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://cdn.jsdelivr.net/gh/wuaifx/wuaifx.github.io/&lt;/code&gt; + &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;仓库里的文件路径&lt;/code&gt; 来访问。&lt;/p&gt;
-
-&lt;p&gt;比如仓库里有一个 js 文件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;assets/js/main.js&lt;/code&gt;，那么它可以用 CDN 链接 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://cdn.jsdelivr.net/gh/wuaifx/wuaifx.github.io/assets/js/main.js&lt;/code&gt; 来访问。&lt;/p&gt;
-
-&lt;p&gt;另外还支持一些高级用法，比如：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;指定 release 版本号/提交 sha1/分支名称，例如指定获取该仓库的名称为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.2.0&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v1.2.0&lt;/code&gt; 的 release 版本资源：&lt;/p&gt;
-
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; https://cdn.jsdelivr.net/gh/wuaifx/wuaifx.github.io@1.2.0/assets/js/main.js
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;如果指定版本为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.2&lt;/code&gt;，那它会自动匹配到这个范围内的最新版本号。&lt;/p&gt;
-
-    &lt;p&gt;也可以不指定版本或者指定版本为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;latest&lt;/code&gt;，这样总是使用最新版本的资源。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;压缩资源，在 js/css 文件后缀前面加上 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.min&lt;/code&gt;：&lt;/p&gt;
-
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; https://cdn.jsdelivr.net/gh/wuaifx/wuaifx.github.io@1.2.0/assets/js/main.min.js
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;合并多个文件，用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;combine/file1,file2,file3&lt;/code&gt; 格式的链接：&lt;/p&gt;
-
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; https://cdn.jsdelivr.net/combine/gh/wuaifx/wuaifx.github.io@1.2.0/assets/js/main.min.js,gh/wuaifx/wuaifx.github.io@1.2.0/assets/js/simple-jekyll-search.min.js
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;压缩资源、合并文件的 CDN 链接在第一次有人访问时可能比较慢，后面再有人访问就快了。&lt;/p&gt;
-
-&lt;p&gt;其它知识点：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;可以通过 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://cdn.jsdelivr.net/combine/gh/wuaifx/wuaifx.github.io[@&amp;lt;版本号&amp;gt;]/[&amp;lt;文件夹&amp;gt;/]&lt;/code&gt; 这样的路径浏览缓存文件列表；&lt;/li&gt;
-  &lt;li&gt;可以访问 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://purge.jsdelivr.net/gh/wuaifx/wuaifx.github.io@1.2.0/assets/js/main.js&lt;/code&gt; 来清除指定文件的缓存；（将引用的 CDN 链接里的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cdn&lt;/code&gt; 改成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;purge&lt;/code&gt; 就是了）&lt;/li&gt;
-  &lt;li&gt;可以访问 `https://data.jsdelivr.com/v1/package/gh/wuaifx/&lt;/li&gt;
-  &lt;li&gt;login\wuaifx.github.io` 来查看 CDN 上的 tags 和 versions 列表，更多数据接口参数参见 &lt;a href=&quot;https://github.com/jsdelivr/data.jsdelivr.com&quot;&gt;https://github.com/jsdelivr/data.jsdelivr.com&lt;/a&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;改造步骤&quot;&gt;改造步骤&lt;/h2&gt;
-
-&lt;p&gt;下面是记录具体改造博客模板的步骤：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;在 _config.yml 文件中添加控制开关：&lt;/p&gt;
-
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c1&quot;&gt;# 对 css 和 js 资源的 cdn 加速配置&lt;/span&gt;
- &lt;span class=&quot;na&quot;&gt;cdn&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-     &lt;span class=&quot;na&quot;&gt;jsdelivr&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-         &lt;span class=&quot;na&quot;&gt;enabled&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;修改 _layouts 里的文件，给名为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;assets_base_url&lt;/code&gt; 的变量赋值，用它来代表加载静态资源的根路径：&lt;/p&gt;
-
-    &lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;assets_base_url&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
- &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;cdn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;jsdelivr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enabled&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-     &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;assets_base_url&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://cdn.jsdelivr.net/gh/&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;repository&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'@master'&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
- &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;修改以前直接用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{{ site.url }}&lt;/code&gt; 拼接的静态资源引用链接，替换为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{{ assets_base_url }}&lt;/code&gt;，比如 _includes/header.html 里：&lt;/p&gt;
-
-    &lt;div class=&quot;language-diff highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; - &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;{{ site.url }}/assets/css/posts/index.css&quot;&amp;gt;
- + &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;{{ assets_base_url }}/assets/css/posts/index.css&quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;这样万一哪天 CDN 出了点什么状况，我们也可以很方便地通过一个开关就切回自已的资源链接恢复服务。&lt;/p&gt;
-
-&lt;p&gt;主要就是这类修改，当然涉及的地方有多处，以上只是举一处例子记录示意，改造过程和改造后的代码可以参考我的博客仓库 &lt;a href=&quot;https://github.com/wuaifx/wuaifx.github.io&quot;&gt;https://github.com/wuaifx/wuaifx.github.io&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h2 id=&quot;现存问题&quot;&gt;现存问题&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;如果项目曾经打过 tag，那么新增/修改静态资源后，需要刷新 CDN 缓存的话，需要打个新 tag；&lt;/p&gt;
-
-    &lt;p&gt;一般发生在修改了博客模板的 js/css 以后。我也还在摸索如何省去这一步的方法。&lt;/p&gt;
-
-    &lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; 我后来采用的解决方法是删除了所有的 tag，这样以前的 release 就变成了 Draft，对外是不可见的，因为我这个仓库不需要对外可见的 release，所以这个问题也就解决了，不需要再操心刷新 CDN 的问题了。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;参考链接&quot;&gt;参考链接&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://hacpai.com/article/1583894928771&quot;&gt;GitHub 图床的正确用法，通过 jsDelivr CDN 全球加速&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/larpland/article/details/101349605&quot;&gt;jsDelivr 为开发者提供免费公共 CDN 加速服务&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jsdelivr.com/features&quot;&gt;Features - jsDelivr&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;相关文章&quot;&gt;相关文章&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://wuaifx.ga/2020/10/07/cdn-for-github-pages-2/&quot;&gt;使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源（二）&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="GitHub" /><summary type="html">挺久以前就有网友给我的 GitHub Pages 博客模板提 Issue，说希望能增加 CDN 用于加速静态资源的加载，由于懒，一直没有动。</summary></entry><entry><title type="html">一份简明的 Base64 原理解析</title><link href="https://wuaifx.ga/2020/03/07/get-an-in-depth-understanding-of-base64/" rel="alternate" type="text/html" title="一份简明的 Base64 原理解析" /><published>2020-03-07T00:00:00+08:00</published><updated>2020-03-07T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/03/07/get-an-in-depth-understanding-of-base64</id><content type="html" xml:base="https://wuaifx.ga/2020/03/07/get-an-in-depth-understanding-of-base64/">&lt;p&gt;书接上回，在 &lt;a href=&quot;https://wuaifx.ga/2020/03/01/base64-bug/&quot;&gt;记一个 Base64 有关的 Bug&lt;/a&gt; 一文里，我们说到了 Base64 的编解码器有不同实现，交叉使用它们可能引发的问题等等。&lt;/p&gt;
-
-&lt;p&gt;这一回，我们来对 Base64 这一常用编解码技术的原理一探究竟。&lt;/p&gt;
-
-&lt;h2 id=&quot;1-base64-是什么&quot;&gt;1. Base64 是什么&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Base64 是一种基于 64 个可打印字符来表示二进制数据的表示方法。由于 2^6=64，所以每 6 个比特为一个单元，对应某个可打印字符。3 个字节有 24 个比特，对应于 4 个 Base64 单元，即 3 个字节可由 4 个可打印字符来表示。&lt;/p&gt;
-
-  &lt;p&gt;——维基百科&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;它不是一种加解密技术，是一种简单的编解码技术。&lt;/p&gt;
-
-&lt;p&gt;Base64 常用于表示、传输、存储二进制数据，也可以用于将一些含有特殊字符的文本内容编码，以便传输。&lt;/p&gt;
-
-&lt;p&gt;比如：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;在电子邮件的传输中，Base64 可以用来将 binary 的字节序列，比如附件，编码成 ASCII 字节序列；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;将一些体积不大的图片 Base64 编码后，直接内嵌到网页源码里；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;将要传递给 HTTP 请求的参数做简单的转换，降低肉眼可读性；&lt;/p&gt;
-
-    &lt;p&gt;&lt;em&gt;注：用于 URL 的 Base64 非标准 Base64，是一种变种。&lt;/em&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;网友们在论坛等公开场合习惯将邮箱地址 Base64 后再发出来，防止被爬虫抓取后发送垃圾邮件。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;2-base64-编码原理&quot;&gt;2. Base64 编码原理&lt;/h2&gt;
-
-&lt;p&gt;标准 Base64 里的 64 个可打印字符是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A-Za-z0-9+/&lt;/code&gt;，分别依次对应索引值 0-63。索引表如下：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/java/base64-index.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;编码时，每 3 个字节一组，共 8bit*3=24bit，划分成 4 组，即每 6bit 代表一个编码后的索引值，划分如下图所示：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/java/base64-split.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;这样可能不太直观，举个例子就容易理解了。比如我们对 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; 进行编码：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/java/base64-example.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;可以看到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; 编码后变成了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Y2F0&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;如果待编码内容的字节数不是 3 的整数倍，那需要进行一些额外的处理。&lt;/p&gt;
-
-&lt;p&gt;如果最后剩下 1 个字节，那么将补 4 个 0 位，编码成 2 个 Base64 字符，然后补两个 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/java/base64-padding2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;如果最后剩下 2 个字节，那么将补 2 个 0 位，编码成 3 个 Base64 字符，然后补一个 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/java/base64-padding1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;3-实现一个简易的-base64-编码器&quot;&gt;3. 实现一个简易的 Base64 编码器&lt;/h2&gt;
-
-&lt;p&gt;讲完原理，我们就可以动手实现一个简易的标准 Base64 编码器了，以下是我参考 Java 8 的 java.util.Base64 乱写的一个 Java 版本，仅供参考，主要功能代码如下：&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CustomBase64Encoder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;cm&quot;&gt;/**
-     * 索引表
-     */&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sBase64&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;sc&quot;&gt;'A'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'B'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'C'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'D'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'E'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'F'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'G'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'H'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;sc&quot;&gt;'I'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'J'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'K'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'L'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'M'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'N'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'O'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'P'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;sc&quot;&gt;'Q'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'R'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'S'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'T'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'U'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'V'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'W'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'X'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;sc&quot;&gt;'Y'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'Z'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'a'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'b'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'c'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'d'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'e'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'f'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;sc&quot;&gt;'g'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'h'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'i'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'j'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'k'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'l'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'m'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'n'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;sc&quot;&gt;'o'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'p'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'q'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'r'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'s'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'t'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'u'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'v'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;sc&quot;&gt;'w'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'x'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'y'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'z'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'0'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'1'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'2'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'3'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;sc&quot;&gt;'4'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'5'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'6'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'7'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'8'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'9'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'+'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'/'&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
-
-    &lt;span class=&quot;cm&quot;&gt;/**
-     * 将 byte[] 进行 Base64 编码并返回字符串
-     * @param src 原文
-     * @return 编码后的字符串
-     */&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-
-        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// 每次将 3 个字节编码为 4 个字节&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0xff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0xff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0xff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sBase64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x3f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sBase64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x3f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sBase64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x3f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sBase64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x3f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// 处理剩下的 1 个或 2 个字节&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0xff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sBase64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x3f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sBase64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x3f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'='&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'='&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0xff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0xff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sBase64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x3f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sBase64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x3f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sBase64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x3f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'='&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;这部分源码我也上传到 GitHub 仓库 &lt;a href=&quot;https://github.com/wuaifx/spring-practices&quot;&gt;https://github.com/wuaifx/spring-practices&lt;/a&gt; 的 base64test 工程里了。&lt;/p&gt;
-
-&lt;h2 id=&quot;4-其它知识点&quot;&gt;4. 其它知识点&lt;/h2&gt;
-
-&lt;h3 id=&quot;41-为什么有的编码结果带回车&quot;&gt;4.1 为什么有的编码结果带回车&lt;/h3&gt;
-
-&lt;p&gt;在电子邮件中，根据 RFC 822 规定，每 76 个字符需要加上一个回车换行，所以有些编码器实现，比如 sun.misc.BASE64Encoder.encode，是带回车的，还有 java.util.Base64.Encoder.RFC2045，是带回车换行的，每行 76 个字符。&lt;/p&gt;
-
-&lt;h3 id=&quot;42-base64-的变种&quot;&gt;4.2 Base64 的变种&lt;/h3&gt;
-
-&lt;p&gt;除了标准 Base64 之外，还有一些其它的 Base64 变种。&lt;/p&gt;
-
-&lt;p&gt;比如在 URL 的应用场景中，因为标准 Base64 索引表中的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; 会被 URLEncoder 转义成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%XX&lt;/code&gt; 形式，但 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt; 是 SQL 中的通配符，直接用于数据库操作会有问题。此时可以采用 URL Safe 的编码器，索引表中的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/+&lt;/code&gt; 被换成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-_&lt;/code&gt;，比如 java.util.Base64.Encoder.RFC4648_URLSAFE 就是这样的实现。&lt;/p&gt;
-
-&lt;h2 id=&quot;5-参考链接&quot;&gt;5. 参考链接&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://zh.wikipedia.org/zh-hans/Base64&quot;&gt;https://zh.wikipedia.org/zh-hans/Base64&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.liaoxuefeng.com/wiki/897692888725344/949441536192576&quot;&gt;https://www.liaoxuefeng.com/wiki/897692888725344/949441536192576&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;我的博客即将同步至腾讯云+社区，邀请大家一同入驻：https://cloud.tencent.com/developer/support-plan?invite_code=guk42yjsce8s&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Java" /><summary type="html">书接上回，在 记一个 Base64 有关的 Bug 一文里，我们说到了 Base64 的编解码器有不同实现，交叉使用它们可能引发的问题等等。</summary></entry><entry><title type="html">记一个 Base64 有关的 Bug</title><link href="https://wuaifx.ga/2020/03/01/base64-bug/" rel="alternate" type="text/html" title="记一个 Base64 有关的 Bug" /><published>2020-03-01T00:00:00+08:00</published><updated>2020-03-01T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/03/01/base64-bug</id><content type="html" xml:base="https://wuaifx.ga/2020/03/01/base64-bug/">&lt;p&gt;本文原计划写两部分内容，第一是记录最近遇到的与 Base64 有关的 Bug，第二是 Base64 编码的原理详解。结果写了一半发现，诶？不复杂的一个事儿怎么也要讲这么长？不利于阅读和理解啊（其实是今天有点懒想去休闲娱乐会儿），所以 Base64 编码的原理详解的部分将在下一篇带来，敬请关注。&lt;/p&gt;
-
-&lt;h2 id=&quot;0x01-遇到的现象&quot;&gt;0x01 遇到的现象&lt;/h2&gt;
-
-&lt;p&gt;A 向 B 提供了一个接口，约定接口参数 Base64 编码后传递。&lt;/p&gt;
-
-&lt;p&gt;但 A 对 B 传递的参数进行 Base64 解码时报错了：&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Illegal base64 character a
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;0x02-原因分析&quot;&gt;0x02 原因分析&lt;/h2&gt;
-
-&lt;p&gt;搜索后发现这是一个好多网友们都踩过的坑，简而言之就一句话：Base64 编/解码器有不同实现，有的不相互兼容。&lt;/p&gt;
-
-&lt;p&gt;比如我上面遇到的现象，可以使用下面这段代码完整模拟复现：&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.wuaifx.base64test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.boot.CommandLineRunner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.boot.SpringApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.boot.autoconfigure.SpringBootApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.util.Base64Utils&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sun.misc.BASE64Encoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;nd&quot;&gt;@SpringBootApplication&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Base64testApplication&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CommandLineRunner&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;It takes a strong man to save himself, and a great man to save another.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getBytes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encrypted&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BASE64Encoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decrypted&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Base64Utils&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;decodeFromString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encrypted&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decrypted&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nc&quot;&gt;SpringApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Base64testApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;以上代码执行会报异常：&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Caused by: java.lang.IllegalArgumentException: Illegal base64 character a
-	at java.util.Base64$Decoder.decode0(Base64.java:714) ~[na:1.8.0_202-release]
-	at java.util.Base64$Decoder.decode(Base64.java:526) ~[na:1.8.0_202-release]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;注：&lt;/strong&gt; 测试代码里的那个字符串如果很短，比如「Hello, World」这种，可以正常解码。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;也就是说，用 sun.misc.BASE64Encoder 编码，用 org.springframework.util.Base64Utils 进行解码，是有问题的，我们可以用它俩分别对以上符串进行编码，然后输出看看差异。测试代码：&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;It takes a strong man to save himself, and a great man to save another.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getBytes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BASE64Encoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;--- 华丽的分隔线 ---&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Base64Utils&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;encodeToString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;输出：&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SXQgdGFrZXMgYSBzdHJvbmcgbWFuIHRvIHNhdmUgaGltc2VsZiwgYW5kIGEgZ3JlYXQgbWFuIHRv
-IHNhdmUgYW5vdGhlci4=
---- 华丽的分隔线 ---
-SXQgdGFrZXMgYSBzdHJvbmcgbWFuIHRvIHNhdmUgaGltc2VsZiwgYW5kIGEgZ3JlYXQgbWFuIHRvIHNhdmUgYW5vdGhlci4=
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;可以看到 sun.misc.BASE64Encoder 编码后的内容换行了，而换行符的 ASCII 编码正好是 0x0a，如此貌似解释得通了。让我们进一步跟踪一下，找一下出现这种差异的源头。&lt;/p&gt;
-
-&lt;h2 id=&quot;0x03-更进一步&quot;&gt;0x03 更进一步&lt;/h2&gt;
-
-&lt;p&gt;在 IDEA 里按住 CTRL 或 COMMAND 键点击方法名，可以跳转到它们的实现。&lt;/p&gt;
-
-&lt;h3 id=&quot;31-sunmiscbase64encoderencode&quot;&gt;3.1 sun.misc.BASE64Encoder.encode&lt;/h3&gt;
-
-&lt;p&gt;这种写法主要涉及到两个类，sun.misc 包下的 BASE64Encoder 和 CharacterEncoder，其中后者是前者的父类。&lt;/p&gt;
-
-&lt;p&gt;它实际工作的 encode 方法是在 CharacterEncoder 文件里，带注释版如下：&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InputStream&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;OutputStream&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;outStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;numBytes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// bytesPerLine 在 BASE64Encoder 里实现，返回 57&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;tmpbuffer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bytesPerLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()];&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// 用 outStream 构造一个 PrintStream&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;encodeBufferPrefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;outStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// 读取最多 57 个 bytes&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;numBytes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;readFully&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tmpbuffer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numBytes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// 啥也没干&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;encodeLinePrefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;outStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numBytes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// 每次处理 3 bytes，编码成 4 bytes，不足位的补 0 位和 '='&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numBytes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bytesPerAtom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numBytes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bytesPerLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;c1&quot;&gt;// 换行&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;encodeLineSuffix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;outStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// 啥也没干&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;encodeBufferSuffix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;outStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;然后在 CharacterEncoder 类的注释里我们可以看到编码后的格式：&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Buffer Prefix]
-[Line Prefix][encoded data atoms][Line Suffix]
-[Buffer Suffix]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;而结合 BASE64Encoder 这个实现类来看，Buffer Prefix、Buffer Suffix 和 Line Prefix 都为空，Line Suffix 为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\n&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;至此，我们已经找到实现中换行的部分——这个编码器实现里，读取 57 个 byte 作为一行进行编码（编码完成后是 76 个 byte）。&lt;/p&gt;
-
-&lt;h3 id=&quot;32-orgspringframeworkutilbase64utilsencodetostring&quot;&gt;3.2 org.springframework.util.Base64Utils.encodeToString&lt;/h3&gt;
-
-&lt;p&gt;这种写法主要涉及到 org.springframework.util.Base64Utils 和 java.util.Base64 两个类，可以看到前者主要是后者的封装。&lt;/p&gt;
-
-&lt;p&gt;Base64Utils.encodeToString 这种写法最终用到的是 Base64.Encoder.RFC4648 这种编码器：&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// isURL = false，newline = null，linemax = -1，doPadding = true&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Encoder&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;RFC4648&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Encoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;留意 newline 和 linemax 的值。&lt;/p&gt;
-
-&lt;p&gt;然后看实际的编码实现所在的 Base64.encode0 方法：&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;encode0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;off&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// 这个条件不会满足，不会加换行&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dlen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linemax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;所以……这个实现里没有换行。&lt;/p&gt;
-
-&lt;h2 id=&quot;0x04-小结&quot;&gt;0x04 小结&lt;/h2&gt;
-
-&lt;p&gt;经过以上的分析，真相已经大白了，就是两个编码器的实现不一样，我们在开发过程中注意使用匹配的编码解码器就 OK 了，就是用哪个 Java 包下面的编码器编码，就用相同包下的对应解码器解码。&lt;/p&gt;
-
-&lt;p&gt;至于为啥会出现不一样的实现，它们之间有过什么来龙去脉、恩怨情仇，Base64 的详细原理等等，就厚着老脸，邀请大家且听下回分解吧！:-P&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Java" /><summary type="html">本文原计划写两部分内容，第一是记录最近遇到的与 Base64 有关的 Bug，第二是 Base64 编码的原理详解。结果写了一半发现，诶？不复杂的一个事儿怎么也要讲这么长？不利于阅读和理解啊（其实是今天有点懒想去休闲娱乐会儿），所以 Base64 编码的原理详解的部分将在下一篇带来，敬请关注。</summary></entry><entry><title type="html">GitHub 用户专属福利，实际到账 3K+，Namebase Airdrop</title><link href="https://wuaifx.ga/2020/02/21/namebase-airdrop/" rel="alternate" type="text/html" title="GitHub 用户专属福利，实际到账 3K+，Namebase Airdrop" /><published>2020-02-21T00:00:00+08:00</published><updated>2020-02-21T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/02/21/namebase-airdrop</id><content type="html" xml:base="https://wuaifx.ga/2020/02/21/namebase-airdrop/">&lt;p&gt;我经常提醒自己的防骗第一准则：&lt;strong&gt;天上不会掉馅饼&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;冒着被人当骗子的风险，写这样一篇文章，是因为这次是真的领到了馅饼。不过这个馅饼不是随机掉落，是限定了条件定向投放的，满足条件的可以一试，不满足的就不用浪费时间了，可以推荐给身边的 GitHub 用户来碰碰运气。&lt;/p&gt;
-
-&lt;p&gt;我的馅饼到账图：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/airdrop-income.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;从开始操作到入账历时约一天，花了一两个小时在了解和操作上面。&lt;/p&gt;
-
-&lt;h2 id=&quot;条件&quot;&gt;条件&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;在 2019-02-04 那一周，你的 GitHub 账号有 15 个以上 followers；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;保留有当时的 SSH / PGP 私钥；&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;背景简介&quot;&gt;背景简介&lt;/h2&gt;
-
-&lt;p&gt;详情可查看 &lt;a href=&quot;https://www.namebase.io/airdrop&quot;&gt;https://www.namebase.io/airdrop&lt;/a&gt;，大意就是说 Handshake Orgnization 从 A16Z 和红杉融资以后，向 GNU、Mozilla 和其它互联网基金会捐赠了 10.2 亿美元，现在他们向 GitHub 上符合条件的开发者赠送约 4662 Handshake 币。&lt;/p&gt;
-
-&lt;p&gt;而这些币可以提取到 Namebase 账户，并可以兑换成比特币或美元，最终换成人民币提现。&lt;/p&gt;
-
-&lt;p&gt;Handshake Orgnization 可以提供 CA 的分布式替代方案，去中心化的 DNS 以提升互联网安全性，详见 &lt;a href=&quot;https://www.namebase.io/blog/meet-handshake-decentralizing-dns-to-improve-the-security-of-the-internet&quot;&gt;https://www.namebase.io/blog/meet-handshake-decentralizing-dns-to-improve-the-security-of-the-internet&lt;/a&gt;。建议有兴趣的人除了收馅饼，也关注一下项目，项目方放 Airdrop 是希望更多人能参与并支持他们的项目建设。&lt;/p&gt;
-
-&lt;h2 id=&quot;取馅饼步骤&quot;&gt;取馅饼步骤&lt;/h2&gt;
-
-&lt;p&gt;好了闲话少述，我知道大家最关心的还是怎么领到钱，步骤可以根据 &lt;a href=&quot;https://www.namebase.io/airdrop&quot;&gt;https://www.namebase.io/airdrop&lt;/a&gt; 讲的来，以下我也简单做个描述，供懒得看英文的朋友参考：&lt;/p&gt;
-
-&lt;h3 id=&quot;step-1-验证并领取-hns&quot;&gt;Step 1. 验证并领取 HNS&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;打开 &lt;a href=&quot;https://www.namebase.io&quot;&gt;https://www.namebase.io&lt;/a&gt;，点击右上角 Log In，使用 GitHub 账号登录；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;打开 &lt;a href=&quot;https://www.namebase.io/airdrop&quot;&gt;https://www.namebase.io/airdrop&lt;/a&gt;，按它的步骤来，第一步，下载 hs-airdrop 工具：&lt;/p&gt;
-
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git clone https://github.com/handshake-org/hs-airdrop.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;第二步，安装 hs-airdrop 工具：&lt;/p&gt;
-
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;hs-airdrop &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;我在 npm install 时遇到过两个问题，一个是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Your PYTHONPATH points to a site-packages dir ...&lt;/code&gt;，解决方案参考 &lt;a href=&quot;https://wuaifx.ga/wiki/python/#your-pythonpath-points-to-a-site-packages-dir&quot;&gt;https://wuaifx.ga/wiki/python/#your-pythonpath-points-to-a-site-packages-dir&lt;/a&gt;，另一个是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;No Xcode or CLT version detected&lt;/code&gt;，解决方案参考 &lt;a href=&quot;https://wuaifx.ga/wiki/mac/#no-xcode-or-clt-version-detected&quot;&gt;https://wuaifx.ga/wiki/mac/#no-xcode-or-clt-version-detected&lt;/a&gt;。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;第三步，找到你认为有资格的 SSH / PGP 私钥，一般是放在 ~/.ssh 目录下，比如我的是 ~/.ssh/id_rsa；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;第四步，点击网页上的 Step 4 的 Click To Show Your Handshake Wallet Address，得到你的 HNS 币钱包 address：&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/images/blog/airdrop-address.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-    &lt;p&gt;然后执行：&lt;/p&gt;
-
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ./bin/hs-airdrop &amp;lt;path to key&amp;gt; &amp;lt;address&amp;gt; &amp;lt;fee&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;比如我执行的是&lt;/p&gt;
-
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ./bin/hs-airdrop ~/.ssh/id_rsa xxxxxxx 0.01
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;如果是用 GPG key 的，使用命令（不明白含义的可以 ./bin/hs-airdrop –help 查看命令帮助文档）：&lt;/p&gt;
-
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ./bin/hs-airdrop &amp;lt;导出的 .asc/.pgp/.gpg 文件&amp;gt; &amp;lt;gpg-id&amp;gt; &amp;lt;address&amp;gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; 0.01
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;这里有几点可以加速命令执行的：&lt;/p&gt;
-
-    &lt;p&gt;一、fee 可以设置高一点，比如 10，这会加快确认速度。&lt;/p&gt;
-
-    &lt;p&gt;二、可以先把 https://github.com/handshake-org/hs-tree-data clone 到 ~/.hs-tree-data，这样在以上命令执行过程中需要下载的文件就在本地了。&lt;/p&gt;
-
-    &lt;p&gt;&lt;strong&gt;注：&lt;/strong&gt; 这一步会用到私钥，有很多人担忧这里存在安全隐患，文档上有说明说是用私钥只用于生成加密证明，不会被上传，证明里也不会包含私钥的任何信息，hs-airdrop 的源码是开源的，可以 review 它的代码，或者实在不放心的可以在操作完之后就把用于 GitHub 的密钥都换掉。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;第五步，上一步执行成功后，会在最后展示一段 Base64，将它贴到网页里并提交：&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/images/blog/airdrop-base64.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/images/blog/airdrop-submit.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-    &lt;p&gt;如果没有得到 Base64，而是其它提示，有可能是没有资格，也有可能是出错了，可以参考下文末 V2EX 链接里的讨论内容。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;正常这时候就能在 &lt;a href=&quot;https://www.namebase.io/dashboard&quot;&gt;https://www.namebase.io/dashboard&lt;/a&gt; 看到有一笔交易在 Pending 中了：&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/images/blog/airdrop-pending.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;strong&gt;注：&lt;/strong&gt; 这一步正常应该是很快变成 Airdrop: waiting for more confirmations，但有的人可能遇到较长时间显示 Airdrop: almost mined… 的情况，有的等一段时间后可以好，有的则一直在这个状态。这种情况知乎网友 Kenkk 问过客服，回复是 Some airdrops were stuck. Please generate a base64 with a new address from these instructions and submit it again，也就是重新生成钱包地址，然后重新执行第五步的命令即可，注意 fee 可以设置大点，比如 10。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;step-2-身份验证&quot;&gt;Step 2. 身份验证&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/airdrop-verify.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;点 namebase 网页如图上所示位置的“验证了”开始验证身份，会要填名字、问是否居住在美国、上传证件照片，可以上传护照、驾驶证、身份证，我用的驾驶证。&lt;/p&gt;
-
-&lt;p&gt;网友们说这里校验并不严格，不放心的用网上找的图也可以。&lt;/p&gt;
-
-&lt;h3 id=&quot;step-3-等待-hns-入账&quot;&gt;Step 3. 等待 HNS 入账&lt;/h3&gt;
-
-&lt;p&gt;要等待的时间不等，我等了十几个小时。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/airdrop-hns.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;step-4-提取到-btc-钱包&quot;&gt;Step 4. 提取到 BTC 钱包&lt;/h3&gt;
-
-&lt;p&gt;点击 namebase 网站菜单的 Buy &amp;amp; Sell – Sell HNS，完成提现到 BTC 钱包：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/airdrop-cashout.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;像我就是以前不接触币圈，没有 BTC 钱包，现去 OKEX 注册了一个，注册链接：&lt;a href=&quot;https://www.okex.me/join/1876977&quot;&gt;https://www.okex.me/join/1876977&lt;/a&gt;，（链接上包含我的推荐 ID，如果不喜欢，可以去掉）。注册以后在“我的资产”-“充币”里可以获取 BTC 钱包地址。&lt;/p&gt;
-
-&lt;p&gt;然后就又要等待一会儿了，约一二十分钟，BTC 到账了。&lt;/p&gt;
-
-&lt;h3 id=&quot;step-5-提现到银行卡&quot;&gt;Step 5. 提现到银行卡&lt;/h3&gt;
-
-&lt;p&gt;在 OKEX “我的资产”-“资产划转”里将 BTC 划转到法币账户，然后就可以去“交易”-“法币交易”里按提示操作就行了，需要绑定一张银行卡用作收款，我挂出去不到十秒就被买走了，然后两分钟内银行卡里到账，我确认出币后交易完成。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/airdrop-done.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;至此大功告成，按网友们的反馈，按 HNS 换 BTC 行情，实际到手 500 到 1400 刀不等。&lt;/p&gt;
-
-&lt;h3 id=&quot;step-6-收尾&quot;&gt;Step 6. 收尾&lt;/h3&gt;
-
-&lt;p&gt;如果担心信息泄漏的，可以更换 GitHub 密钥、删除 OKEX 上绑定的信息等。&lt;/p&gt;
-
-&lt;h2 id=&quot;相关讨论和记录&quot;&gt;相关讨论和记录&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://v2ex.com/t/645480&quot;&gt;https://v2ex.com/t/645480&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://shidenggui.com/articles/namebase-airdrop&quot;&gt;https://shidenggui.com/articles/namebase-airdrop&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="GitHub" /><summary type="html">我经常提醒自己的防骗第一准则：天上不会掉馅饼。</summary></entry></feed>
+&lt;p&gt;李在福《追球》全集：&lt;a href=&quot;https://v.youku.com/v_show/id_XMjczOTAyODI4.html&quot;&gt;https://v.youku.com/v_show/id_XMjczOTAyODI4.html&lt;/a&gt;&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Blog" /><summary type="html">昨天朋友圈和微博上有不少人在转发林丹从国家队退役的消息，有一点感慨的同时，我在想，以后新入坑的羽毛球迷们，可能渐渐就都不知道「超级丹」、「林李大战」，还有「四大天王」这些名词了吧。</summary></entry></feed>
