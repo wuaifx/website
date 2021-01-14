@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PyCharm如何使用Qt Designer
-categories: Python
+categories: PyCharm
 description: PyCharm如何使用Qt Designer
 keywords: Python， windows, pycharm
 ---
