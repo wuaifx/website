@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-14T17:33:56+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;p&gt;##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-14T18:21:54+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;p&gt;##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/p&gt;
 
 &lt;p&gt;首先直接用pip安装的PyQt-tools的Designer和windows执行程序安装的Designer，是不带翻译文件的，因此我们要把Qt creator中Designer的翻译文件拷贝到Pyqt的Designer目录中。&lt;/p&gt;
 
@@ -18,7 +18,8 @@
   &lt;p&gt;Ps：不想下载Qt但是又想要designer_zh_CN.qm这个翻译文件的，笔者提供下载地址如下：&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;请关注本人公众号吾爱分享派回复designer汉化文件获取下载地址&quot;&gt;请关注本人公众号：吾爱分享派，回复：designer汉化文件获取下载地址&lt;/h3&gt;
+&lt;h3 id=&quot;请关注本人公众号吾爱分享派回复designer汉化文件&quot;&gt;请关注本人公众号：吾爱分享派，回复：“designer汉化文件“###&lt;/h3&gt;
+&lt;p&gt;获取下载地址&lt;/p&gt;
 
 &lt;p&gt;步骤3
 将拷贝的翻译文件复制到 PyQt5 的translations文件夹中&lt;/p&gt;
@@ -431,7 +432,7 @@ create associations 创建关联，关联.py文件，双击都是以pycharm打�
 
 &lt;p&gt;Evaluate试用 一般是30天，不推荐&lt;/p&gt;
 
-&lt;p&gt;国内一般都是破解激活，到此安装已完成，具体激活请看激活的随笔。&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Pycharm" /><summary type="html">关注博主微信公众号：吾爱分享派，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~</summary></entry><entry><title type="html">给 Mac 添加右键菜单「使用 VSCode 打开」</title><link href="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/" rel="alternate" type="text/html" title="给 Mac 添加右键菜单「使用 VSCode 打开」" /><published>2020-10-28T00:00:00+08:00</published><updated>2020-10-28T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/10/28/add-vscode-to-right-click</id><content type="html" xml:base="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/">&lt;p&gt;最终的实现效果是在文件 / 文件夹上右击时，会出现菜单项「用 VSCode 打开」，点击后会启动 Visual Studio Code 打开对应的文件 / 文件夹。&lt;/p&gt;
+&lt;p&gt;国内一般都是破解激活，到此安装已完成，具体激活请看激活的随笔。&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="PyCharm" /><summary type="html">关注博主微信公众号：吾爱分享派，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~</summary></entry><entry><title type="html">给 Mac 添加右键菜单「使用 VSCode 打开」</title><link href="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/" rel="alternate" type="text/html" title="给 Mac 添加右键菜单「使用 VSCode 打开」" /><published>2020-10-28T00:00:00+08:00</published><updated>2020-10-28T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/10/28/add-vscode-to-right-click</id><content type="html" xml:base="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/">&lt;p&gt;最终的实现效果是在文件 / 文件夹上右击时，会出现菜单项「用 VSCode 打开」，点击后会启动 Visual Studio Code 打开对应的文件 / 文件夹。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/posts/mac/open-with-vscode.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
