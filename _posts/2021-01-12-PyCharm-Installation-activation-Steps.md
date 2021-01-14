@@ -1,6 +1,6 @@
 ---
 layout: PyCharm
-title: Pycharm2020.3.2 安装教程2020最新版！（内附Pycharm永久激活码）
+title: Pycharm2020.3.2 安装教程2020最新版（内附Pycharm永久激活码）
 categories: PyCharm
 description: Pycharm2020.3.2 安装、激活教程
 keywords: PyCharm, windows
