@@ -26,7 +26,8 @@ keywords: Python， windows， PyQt5(designer)
 
 
 
-### 请关注本人公众号：吾爱分享派，回复：designer汉化文件获取下载地址 ###
+### 请关注本人公众号：吾爱分享派，回复：“designer汉化文件“###
+获取下载地址 
 
 
 
