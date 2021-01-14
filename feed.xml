@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-14T16:40:28+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;p&gt;##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-14T16:58:09+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;p&gt;##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/p&gt;
 
 &lt;p&gt;首先直接用pip安装的PyQt-tools的Designer和windows执行程序安装的Designer，是不带翻译文件的，因此我们要把Qt creator中Designer的翻译文件拷贝到Pyqt的Designer目录中。&lt;/p&gt;
 
@@ -7,14 +7,12 @@
 
 &lt;p&gt;笔者的路径：F:\Qt\Qt5.11.1\Tools\QtCreator\share\qtcreator\translations&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-PyQt.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-PyQt.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;步骤2
 把其中一个文件拷贝，designer_zh_CN.qm是简体中文，designer_zh_TW.qm是繁体中文，这里我们拷贝简体中文的翻译文件。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-PyQt0.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-PyQt0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Ps：不想下载Qt但是又想要designer_zh_CN.qm这个翻译文件的，笔者提供下载地址&lt;/p&gt;
@@ -29,25 +27,21 @@
 
 &lt;p&gt;笔者的路径：F:\Python\Lib\site-packages\PyQt5\Qt\translations&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-PyQt1.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-PyQt1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;步骤4
 将拷贝的翻译文件复制到 pyqt5-tools 的translations文件夹中&lt;/p&gt;
 
 &lt;p&gt;笔者的路径：F:\Python\Lib\site-packages\pyqt5-tools\translations&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-PyQt2.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-PyQt2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;最终结果
 此时打开PyQt5的designer就会发现界面变成中文的了。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-PyQt3.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</summary></entry><entry><title type="html">利用Python3开发一款小工具（界面的设计）</title><link href="https://wuaifx.ga/2021/01/13/PublicSsoftware-project/" rel="alternate" type="text/html" title="利用Python3开发一款小工具（界面的设计）" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/PublicSsoftware-project</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/PublicSsoftware-project/">&lt;p&gt;##简单的小例子&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-PyQt3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</summary></entry><entry><title type="html">利用Python3开发一款小工具（界面的设计）</title><link href="https://wuaifx.ga/2021/01/13/PublicSsoftware-project/" rel="alternate" type="text/html" title="利用Python3开发一款小工具（界面的设计）" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/PublicSsoftware-project</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/PublicSsoftware-project/">&lt;p&gt;##简单的小例子```&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
-#!/usr/bin/python3
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import os
 import sys
@@ -61,58 +55,49 @@ MyUI.setWindowsTitle('demo')
 MyUI.resize(250, 150)
 MyUI.show()
 sys.exit(app.exec_())
-```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/posts/python/PuSoftP.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;上面的图就是运行之后的小窗口，下面对代码进行分块介绍：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
-#!/usr/bin/python3
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#!/usr/bin/python3
 # -*- coding: utf-8 -*-
-``` 第一行的含义是指定python3执行，第二行指定编码方式utf-8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-```sh
-import os
+&lt;p&gt;第一行的含义是指定python3执行，第二行指定编码方式utf-8&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import os
 import sys
 import paramiko
 from PyQt5 import QtCore, QtGui, QtWidgets
-```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;这里是导入基本的必要模块，因为需要做界面，因此我我们将PyQt模块导入。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
-app = QtWidgets.QApplication(sys.argv)
-``` 所有的PyQt5应用必须创建一个应用（Application）对象。sys.argv参数是一个来自命令行的参数列表。Python脚本可以在shell中运行。这是我们用来控制我们应用启动的一种方法。
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;app = QtWidgets.QApplication(sys.argv)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-```sh
-MyUI = QtWidgets.QWidget()
-```
+&lt;p&gt;所有的PyQt5应用必须创建一个应用（Application）对象。sys.argv参数是一个来自命令行的参数列表。Python脚本可以在shell中运行。这是我们用来控制我们应用启动的一种方法。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MyUI = QtWidgets.QWidget()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Qwidget组件是PyQt5中所有用户界面类的基础类。这里给QWidget提供了默认的构造方法。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
-MyUI.setWindowsTitle('demo')
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MyUI.setWindowsTitle('demo')
 MyUI.resize(250, 150)
-```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;resize()方法调整了widget组件的大小。它现在是250px宽，150px高。
 setWindowsTitle(‘demo’)设置了我们窗口的标题，这个标题显示在标题栏中。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
-MyUI.show()
-```
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MyUI.show()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;show()方法在屏幕上显示出widget。一个widget对象在这里第一次被在内存中创建，并且之后在屏幕上显示。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
-sys.exit(app.exec_())
-```
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sys.exit(app.exec_())
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;最后，应用进入主循环。在这个地方，事件处理开始执行。主循环用于接收来自窗口触发的事件，并且转发他们到widget应用上处理。如果我们调用exit()方法或主widget组件被销毁，主循环将退出。sys.exit()方法确保一个不留垃圾的退出。系统环境将会被通知应用是怎样被结束的。&lt;/p&gt;
@@ -151,70 +136,61 @@ sys.exit(app.exec_())
   &lt;p&gt;到此就可以在designer里面设计页面&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/python/PuSoftP1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##简单的小例子</summary></entry><entry><title type="html">python安装</title><link href="https://wuaifx.ga/2021/01/13/Python-install/" rel="alternate" type="text/html" title="python安装" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/Python-install</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/Python-install/">&lt;p&gt;##python环境的搭建
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/PuSoftP1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##简单的小例子```</summary></entry><entry><title type="html">python安装</title><link href="https://wuaifx.ga/2021/01/13/Python-install/" rel="alternate" type="text/html" title="python安装" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/Python-install</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/Python-install/">&lt;p&gt;##python环境的搭建
 1.下载python（这里以python3.8.6为例）&lt;/p&gt;
 
 &lt;p&gt;step 1：打开下载网址：https://www.python.org/downloads/windows/&lt;/p&gt;
 
 &lt;p&gt;step 2：我这里选着python3的版本&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;step 3：选择python的可执行文件安装包&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python0.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;2.安装python（这里以python3.8.6为例）&lt;/p&gt;
 
 &lt;p&gt;step 1：下载完成后就可以安装了，基本傻瓜式安装，不过要强调几点，如下图（python3.8.6已经可以自动添加环境变量                     如果你要安装python2那么你手动配置环境变量，具体方法自行百度，这里不做赘述！）&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python1.png)
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-![](/images/posts/python/python2.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;step 2：安装完成后，我们来检查一下python是否安装成功，打开cmd命令，输入python，回车，若显示类似下图，证明环境搭建完成。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python3.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;step 3：测试输出hello world，从开始菜单打开python自带的IDE,输入如下代码，然后回车。&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;       print('hello world')
-
-![](/images/posts/python/python4.png)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;至此，我们的python环境搭建完成。&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##python环境的搭建 1.下载python（这里以python3.8.6为例）</summary></entry><entry><title type="html">pycharm的python解释器的搭建和创建第一个项目</title><link href="https://wuaifx.ga/2021/01/13/Python-pycharm-config/" rel="alternate" type="text/html" title="pycharm的python解释器的搭建和创建第一个项目" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/Python-pycharm-config</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/Python-pycharm-config/">&lt;p&gt;##pycharm的python解释器的搭建和创建第一个项目&lt;/p&gt;
 
 &lt;p&gt;step 1：打开pycharm并且点击设置，如下图&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-pycharm.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;step 2：由于之前我配置过，也创建过项目；所以系统把之前的默认帮我添加上了；只是现在不支持3.5了&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-pycharm0.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;step 3：然后，点击python解释器框体后面的齿轮按钮，再点击添加，如下配置，点击确定&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-pycharm1.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;step 4：下载一些文件，稍等片刻；如下图&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-pycharm2.png)
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-![](/images/posts/python/python-pycharm3.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;step 5：完成后，如下图，点确定&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-pycharm4.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;step 6：至此安装完成&lt;/p&gt;
 
@@ -222,31 +198,30 @@ sys.exit(app.exec_())
 
 &lt;p&gt;首先打开pycharm，接下来是一些按照顺序摆放的配置图片。完成pycharm的一个项目创建。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-pycharm-project.png)
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm-project.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-![](/images/posts/python/python-pycharm-project0.png)
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm-project0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-![](/images/posts/python/python-pycharm-project1.png)
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm-project1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-![](/images/posts/python/python-pycharm-project2.png)
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm-project2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-![](/images/posts/python/python-pycharm-project3.png)
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm-project3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-![](/images/posts/python/python-pycharm-project4.png)
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm-project4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-![](/images/posts/python/python-pycharm-project5.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/python-pycharm-project5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;至此，pycharm已经全部安装完成。&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##pycharm的python解释器的搭建和创建第一个项目</summary></entry><entry><title type="html">PyCharm如何使用Qt Designer</title><link href="https://wuaifx.ga/2021/01/13/pycharm-qt-designer/" rel="alternate" type="text/html" title="PyCharm如何使用Qt Designer" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/pycharm-qt-designer</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/pycharm-qt-designer/">&lt;p&gt;Qt Designer 是一个 GUI 设计器，能可视化设计出界面。PyQT5 通过 pyuic5 工具将 Qt Designer 生成的 xxx.ui 文件转换成 python 代码，大大节省手工编写界面代码的工作量。&lt;/p&gt;
 
 &lt;p&gt;本篇介绍如何在 PyCharm 中集成 Qt Designer 工具，包括 QT Designer 的配置， pyuic5 的配置和调用界面代码的方法。&lt;/p&gt;
 
-&lt;p&gt;pyqt5 可以使用 pip 工具来安装：&lt;/p&gt;
+&lt;p&gt;pyqt5 可以使用 pip 工具来安装：```&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
-pip install pyqt5
-``` 安装了 pyqt5 之后，在 python 安装目录下面的 Scripts 文件夹中，有一个 pyuic5.exe 文件，这个可执行文件用于将 Qt Designer 生成的 ui 文件转换为 python 代码。
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install pyqt5
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;安装了 pyqt5 之后，在 python 安装目录下面的 Scripts 文件夹中，有一个 pyuic5.exe 文件，这个可执行文件用于将 Qt Designer 生成的 ui 文件转换为 python 代码。&lt;/p&gt;
 
 &lt;p&gt;##安装 Qt Designer
 在 https://build-system.fman.io/qt-designer-download 这个网址可以下载和安装独立的 Qt Designer 安装版，根据操作系统选择合适的安装文件进行安装。&lt;/p&gt;
@@ -256,10 +231,9 @@ Qt Designer 安装后，在安装目录下面有一个 designer.exe 文件。打
 
 &lt;p&gt;在 PyCharm 中配置 Qt Designer，目的是在开发的时候，在 PyCharm 中直接操作 Qt Designer，同时能方便的将 ui 文件保存到 Python 工程指定的文件夹下。通过菜单 File -&amp;gt; Settings 打开如下的配置界面，点击右键 “+” 号配置 Qt Designer:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharmqtd.png)
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharmqtd.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-![](/images/posts/python/pycharmqtd0.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharmqtd0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;左边是配置的路径，右面是配置的参数：
 Program： designer.exe 的路径
@@ -267,28 +241,23 @@ Working Directory: 设置保存的 UI 文件位置，$FileDir$ 表示文件所�
 
 &lt;p&gt;这个配置适合调用 Qt Designer 新建窗口的情况。如果要对已经创建的 ui 文件进行编辑，为了方便，可以再新建一个配置如下：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharmqtd1.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharmqtd1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;测试一下。比如在 Python 工程中新建一个 designer 文件夹，选中 designer 文件夹&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharmqtd2.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharmqtd2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;通过菜单 Tools -&amp;gt; External Tools 菜单打开 qt designer:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharmqtd3.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharmqtd3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;注意这里的 QT Designer Create 和 QT Designer Edit 都是我刚才配置的外部工具。在 Qt Designer 中新建一个 Main Window:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharmqtd4.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharmqtd4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;在 Main Window 中拖拽几个控件。因为本文主要讲解 Qt Designer 的用法，所以对控件的细节不展开。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharmqtd5.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharmqtd5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;然后将界面保存为 MainWindow.ui，路径为 designer 文件夹下面。选中 MainWindow.ui，通过菜单 Tools -&amp;gt; External Tools -&amp;gt; QT Desinger Edit，MainWindow.ui 文件被 Qt Designer 打开。Qt Designer 的配置没有问题。&lt;/p&gt;
 
@@ -297,8 +266,7 @@ ui 转换的 python 代码随着对 ui 的变更，每次都会重新生成，�
 
 &lt;p&gt;我们看到，qt designer 自动生成的代码实现了一个名为 UI_MainWindow 的类，这个类继承自 object，在该类的 setupUi() 方法中有一个名为 MainWindow 的参数，我们需要将真正的 QMainWindow 对象传给这个方法，来实现我们自己的主窗口。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
-from designer.MainWindow import Ui_MainWindow
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from designer.MainWindow import Ui_MainWindow
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
@@ -318,7 +286,6 @@ ui_components.setupUi(mainwindow)
 mainwindow.show()
 
 sys.exit(app.exec_())
-```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">Qt Designer 是一个 GUI 设计器，能可视化设计出界面。PyQT5 通过 pyuic5 工具将 Qt Designer 生成的 xxx.ui 文件转换成 python 代码，大大节省手工编写界面代码的工作量。</summary></entry><entry><title type="html">使用PyCharm官方中文语言包汉化PyCharm</title><link href="https://wuaifx.ga/2021/01/12/PyCharm-chinese/" rel="alternate" type="text/html" title="使用PyCharm官方中文语言包汉化PyCharm" /><published>2021-01-12T00:00:00+08:00</published><updated>2021-01-12T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/12/PyCharm-chinese</id><content type="html" xml:base="https://wuaifx.ga/2021/01/12/PyCharm-chinese/">&lt;p&gt;对于英文不行我来说使用英文版PyCharm实在是太难受了，网上好多汉化补丁都是网友提供了，下面为大家介绍一种PyCharm官方中文语言包汉化方法&lt;/p&gt;
 
 &lt;p&gt;在PyCharm主窗口中点击菜单栏中的File菜单下的Settings…菜单进入PyCharm设置窗口，如下图&lt;/p&gt;
