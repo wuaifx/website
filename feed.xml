@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-14T14:42:10+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;p&gt;##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-14T15:43:20+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;p&gt;##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/p&gt;
 
 &lt;p&gt;首先直接用pip安装的PyQt-tools的Designer和windows执行程序安装的Designer，是不带翻译文件的，因此我们要把Qt creator中Designer的翻译文件拷贝到Pyqt的Designer目录中。&lt;/p&gt;
 
@@ -46,7 +46,7 @@
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/python-PyQt3.png)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</summary></entry><entry><title type="html">利用Python3开发一款小工具（界面的设计）</title><link href="https://wuaifx.ga/2021/01/13/PublicSsoftware-project/" rel="alternate" type="text/html" title="利用Python3开发一款小工具（界面的设计）" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/PublicSsoftware-project</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/PublicSsoftware-project/">&lt;p&gt;##简单的小例子&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```post
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import os
@@ -62,18 +62,18 @@ MyUI.resize(250, 150)
 MyUI.show()
 sys.exit(app.exec_())
 ```
-
-![](/images/posts/python/PuSoftP.png)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/PuSoftP.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;上面的图就是运行之后的小窗口，下面对代码进行分块介绍：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 ``` 第一行的含义是指定python3执行，第二行指定编码方式utf-8
 
-```sh
+```
 import os
 import sys
 import paramiko
@@ -83,19 +83,17 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 &lt;p&gt;这里是导入基本的必要模块，因为需要做界面，因此我我们将PyQt模块导入。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
-app = QtWidgets.QApplication(sys.argv)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;app = QtWidgets.QApplication(sys.argv)
 ``` 所有的PyQt5应用必须创建一个应用（Application）对象。sys.argv参数是一个来自命令行的参数列表。Python脚本可以在shell中运行。这是我们用来控制我们应用启动的一种方法。
 
-```sh
+
 MyUI = QtWidgets.QWidget()
 ```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Qwidget组件是PyQt5中所有用户界面类的基础类。这里给QWidget提供了默认的构造方法。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
-MyUI.setWindowsTitle('demo')
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MyUI.setWindowsTitle('demo')
 MyUI.resize(250, 150)
 ```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -103,15 +101,13 @@ MyUI.resize(250, 150)
 &lt;p&gt;resize()方法调整了widget组件的大小。它现在是250px宽，150px高。
 setWindowsTitle(‘demo’)设置了我们窗口的标题，这个标题显示在标题栏中。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
-MyUI.show()
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MyUI.show()
 ```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;show()方法在屏幕上显示出widget。一个widget对象在这里第一次被在内存中创建，并且之后在屏幕上显示。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sh
-sys.exit(app.exec_())
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sys.exit(app.exec_())
 ```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -145,12 +141,13 @@ sys.exit(app.exec_())
   &lt;p&gt;pycharm-tools-extension tools- qt designer&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/PuSoftP0.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/PuSoftP0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;到此就可以在designer里面设计页面了&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##简单的小例子</summary></entry><entry><title type="html">python安装</title><link href="https://wuaifx.ga/2021/01/13/Python-install/" rel="alternate" type="text/html" title="python安装" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/Python-install</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/Python-install/">&lt;p&gt;##python环境的搭建
+  &lt;p&gt;到此就可以在designer里面设计页面&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/PuSoftP1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">##简单的小例子</summary></entry><entry><title type="html">python安装</title><link href="https://wuaifx.ga/2021/01/13/Python-install/" rel="alternate" type="text/html" title="python安装" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/Python-install</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/Python-install/">&lt;p&gt;##python环境的搭建
 1.下载python（这里以python3.8.6为例）&lt;/p&gt;
 
 &lt;p&gt;step 1：打开下载网址：https://www.python.org/downloads/windows/&lt;/p&gt;
@@ -322,39 +319,35 @@ sys.exit(app.exec_())
 
 &lt;p&gt;在PyCharm主窗口中点击菜单栏中的File菜单下的Settings…菜单进入PyCharm设置窗口，如下图&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm-ch.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/mac/auto-operate.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;PyCharm设置窗口，如下图。点击下图标注1 Plugins选项进入PyCharm插件管理窗口，在下图标注2处输入“chinese”系统会自动搜索相关插件，找到如下图标注3处所示的chinese(simplified) language pack eap插件安装此插件（点击下图标注4处 Install按钮）&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm-ch0.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;PyCharm中文语言插件安装完成后需要重启PyCharm，如下图所示。点击下图标注1或2处 RESTART IDE按钮重启PyCharm&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm-ch1.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;点击上图标注1或2处 Restart IDE按钮重启PyCharm后弹出确认重启提示窗，如下图。点击下图标注1处 Restart按钮确认重启PyCharm&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm-ch2.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;完成重启后PyCharm主窗口成功改为中文，如下图。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm-ch3.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;##PyCharm汉化成功后如果我们想改回英文的该如何操作呢？&lt;/p&gt;
 
 &lt;p&gt;依然是在PyCharm的设置窗口中的Plugins选项中如，下图所示&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm-ch4.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;点击上图标注1 Plugins选项进入插件管理窗口，点击上图标注2处的 Installed选项显示所有已安装PyCharm插件，找到并选中已安装的PyCharm中文语言插件上图标注3，点击上图标注4处 Disable按钮关闭PyCharm中文语言插件，然后点击上图标注5处 确定按钮重启PyCharm，重启后PyCharm又恢复到了英文状态。&lt;/p&gt;
 
-&lt;p&gt;再次改为中文只需按此操作打开PyCharm中文语言插件即可&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="PyCharm" /><summary type="html">对于英文不行我来说使用英文版PyCharm实在是太难受了，网上好多汉化补丁都是网友提供了，下面为大家介绍一种PyCharm官方中文语言包汉化方法</summary></entry><entry><title type="html">Pycharm2020.3.2 安装教程2020最新版！（内附Pycharm永久激活码）</title><link href="https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps/" rel="alternate" type="text/html" title="Pycharm2020.3.2 安装教程2020最新版！（内附Pycharm永久激活码）" /><published>2021-01-12T00:00:00+08:00</published><updated>2021-01-12T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps</id><content type="html" xml:base="https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps/">&lt;p&gt;&amp;lt;font color=#red size=4 face=”黑体”&amp;gt;关注博主微信公众号：Python联盟，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~&amp;lt;/font&amp;gt;&lt;/p&gt;
+&lt;p&gt;再次改为中文只需按此操作打开PyCharm中文语言插件即可&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="PyCharm" /><summary type="html">对于英文不行我来说使用英文版PyCharm实在是太难受了，网上好多汉化补丁都是网友提供了，下面为大家介绍一种PyCharm官方中文语言包汉化方法</summary></entry><entry><title type="html">Pycharm2020.3.2 安装教程2020最新版！（内附Pycharm永久激活码）</title><link href="https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps/" rel="alternate" type="text/html" title="Pycharm2020.3.2 安装教程2020最新版！（内附Pycharm永久激活码）" /><published>2021-01-12T00:00:00+08:00</published><updated>2021-01-12T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps</id><content type="html" xml:base="https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps/">&lt;p&gt;&amp;lt;font color=#red size=4 face=”黑体”&amp;gt;关注博主微信公众号：吾爱分享派，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~&amp;lt;/font&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;PyCharm 是我用过的python编辑器中，比较顺手的一个。而且可以跨平台，在macos和windows下面都可以用，这点比较好。是python现在最好用的编辑器，没有之一。&lt;/p&gt;
 
@@ -366,44 +359,36 @@ sys.exit(app.exec_())
 
 &lt;p&gt;第一步：进入PyCharm官网，点击开发者工具，如下图所示：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/PyCharm.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/PyCharm.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第二步：点击“PyCharm”，进入安装包现在页面，如下图所示：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm0.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第三步：点击“DOWNLOAD NOW”，根据自己需要下载匹配的操作系统的安装包，如下图所示：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm1.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第四步：等待安装包下载完，运行即可。&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm2.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;##python安装过程
  第一步：找到下载好的PyCharm安装包，如下图所示“&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm3.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第二步：双击已下载的PyCharm安装包，出现如下图所示的界面，点击“next”&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm4.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第三步：选择安装目录，Pycharm需要的内存较多，建议将其安装在D盘或者E盘，不建议放在系统盘C盘：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm5.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第四步：点击Next，进入下图的界面：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm6.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;##数字1：
 create desktop shortcut（创建桌面快捷方式），系统32位就选32-bit,系统64位就选64-bit。现在大多数都是64位了，不清楚系统类型：我的电脑=》右键=》属性&lt;/p&gt;
@@ -424,61 +409,51 @@ create associations 创建关联，关联.py文件，双击都是以pycharm打�
 
 &lt;p&gt;第五步：点击Next，进入下图界面：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm7.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;默认安装即可，直接点击Install。&lt;/p&gt;
 
 &lt;p&gt;第六步：耐心的等待两分钟左右，如下图：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm8.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第七步：之后就会得到下面的安装完成的界面：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm9.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第八步：点击Finish，Pycharm安装完成。接下来对Pycharm进行配置，双击运行桌面上的Pycharm图标，进入下图界面：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm10.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm10.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;从哪里导入pycharm设置，直接第三个（Do not import settings），以后还可以导入。选择Do not import settings，之后选择OK，进入下一步。&lt;/p&gt;
 
 &lt;p&gt;第九步：勾选I confirm that……. ，界面如下：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm11.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm11.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第十步：点击“continue”，界面如下：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm12.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm12.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第十一步：数据分享，界面如下：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm13.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm13.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;这个相当于一个问卷调查吧，看自己愿不愿将信息发送JetBrains来提升他们产品的质量&lt;/p&gt;
 
 &lt;p&gt;第十二步：点击“send”或者“Don’t send”。进入如下界面：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm14.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm14.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;皮肤选择，建议选择Darcula主题，该主题更有利于保护眼睛，而且看上去也非常不错~~~&lt;/p&gt;
 
 &lt;p&gt;第十三步：可以右上角关掉，也可以左下角：skip remaining and set defaults（跳过其余和设置默认值）&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm15.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm15.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第十四步：点击左下角：skip remaining and set defaults（跳过其余和设置默认值）进入激活界面，选择第二个License server，如下图所示：&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/posts/python/pycharm16.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm16.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Active 激活分为三种：
 1、JetBrains Account 账户激活；
@@ -487,7 +462,7 @@ create associations 创建关联，关联.py文件，双击都是以pycharm打�
 
 &lt;p&gt;Evaluate试用 一般是30天，不推荐&lt;/p&gt;
 
-&lt;p&gt;国内一般都是破解激活，到此安装已完成，具体激活请看激活的随笔。&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Pycharm" /><summary type="html">&amp;lt;font color=#red size=4 face=”黑体”&amp;gt;关注博主微信公众号：Python联盟，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~&amp;lt;/font&amp;gt;</summary></entry><entry><title type="html">给 Mac 添加右键菜单「使用 VSCode 打开」</title><link href="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/" rel="alternate" type="text/html" title="给 Mac 添加右键菜单「使用 VSCode 打开」" /><published>2020-10-28T00:00:00+08:00</published><updated>2020-10-28T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/10/28/add-vscode-to-right-click</id><content type="html" xml:base="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/">&lt;p&gt;最终的实现效果是在文件 / 文件夹上右击时，会出现菜单项「用 VSCode 打开」，点击后会启动 Visual Studio Code 打开对应的文件 / 文件夹。&lt;/p&gt;
+&lt;p&gt;国内一般都是破解激活，到此安装已完成，具体激活请看激活的随笔。&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Pycharm" /><summary type="html">&amp;lt;font color=#red size=4 face=”黑体”&amp;gt;关注博主微信公众号：吾爱分享派，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~&amp;lt;/font&amp;gt;</summary></entry><entry><title type="html">给 Mac 添加右键菜单「使用 VSCode 打开」</title><link href="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/" rel="alternate" type="text/html" title="给 Mac 添加右键菜单「使用 VSCode 打开」" /><published>2020-10-28T00:00:00+08:00</published><updated>2020-10-28T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/10/28/add-vscode-to-right-click</id><content type="html" xml:base="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/">&lt;p&gt;最终的实现效果是在文件 / 文件夹上右击时，会出现菜单项「用 VSCode 打开」，点击后会启动 Visual Studio Code 打开对应的文件 / 文件夹。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/posts/mac/open-with-vscode.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
