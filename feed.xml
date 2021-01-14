@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-14T18:21:54+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;p&gt;##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-14T18:28:46+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;p&gt;##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/p&gt;
 
 &lt;p&gt;首先直接用pip安装的PyQt-tools的Designer和windows执行程序安装的Designer，是不带翻译文件的，因此我们要把Qt creator中Designer的翻译文件拷贝到Pyqt的Designer目录中。&lt;/p&gt;
 
@@ -18,8 +18,9 @@
   &lt;p&gt;Ps：不想下载Qt但是又想要designer_zh_CN.qm这个翻译文件的，笔者提供下载地址如下：&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;请关注本人公众号吾爱分享派回复designer汉化文件&quot;&gt;请关注本人公众号：吾爱分享派，回复：“designer汉化文件“###&lt;/h3&gt;
-&lt;p&gt;获取下载地址&lt;/p&gt;
+&lt;h3 id=&quot;请关注本人公众号吾爱分享派回复designer汉化文件&quot;&gt;请关注本人公众号：吾爱分享派，回复：“designer汉化文件“&lt;/h3&gt;
+&lt;p&gt;###
+获取下载地址&lt;/p&gt;
 
 &lt;p&gt;步骤3
 将拷贝的翻译文件复制到 PyQt5 的translations文件夹中&lt;/p&gt;
@@ -285,39 +286,7 @@ ui_components.setupUi(mainwindow)
 mainwindow.show()
 
 sys.exit(app.exec_())
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">Qt Designer 是一个 GUI 设计器，能可视化设计出界面。PyQT5 通过 pyuic5 工具将 Qt Designer 生成的 xxx.ui 文件转换成 python 代码，大大节省手工编写界面代码的工作量。</summary></entry><entry><title type="html">使用PyCharm官方中文语言包汉化PyCharm</title><link href="https://wuaifx.ga/2021/01/12/PyCharm-chinese/" rel="alternate" type="text/html" title="使用PyCharm官方中文语言包汉化PyCharm" /><published>2021-01-12T00:00:00+08:00</published><updated>2021-01-12T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/12/PyCharm-chinese</id><content type="html" xml:base="https://wuaifx.ga/2021/01/12/PyCharm-chinese/">&lt;p&gt;对于英文不行我来说使用英文版PyCharm实在是太难受了，网上好多汉化补丁都是网友提供了，下面为大家介绍一种PyCharm官方中文语言包汉化方法&lt;/p&gt;
-
-&lt;p&gt;在PyCharm主窗口中点击菜单栏中的File菜单下的Settings…菜单进入PyCharm设置窗口，如下图&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/mac/auto-operate.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;PyCharm设置窗口，如下图。点击下图标注1 Plugins选项进入PyCharm插件管理窗口，在下图标注2处输入“chinese”系统会自动搜索相关插件，找到如下图标注3处所示的chinese(simplified) language pack eap插件安装此插件（点击下图标注4处 Install按钮）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;PyCharm中文语言插件安装完成后需要重启PyCharm，如下图所示。点击下图标注1或2处 RESTART IDE按钮重启PyCharm&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;点击上图标注1或2处 Restart IDE按钮重启PyCharm后弹出确认重启提示窗，如下图。点击下图标注1处 Restart按钮确认重启PyCharm&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;完成重启后PyCharm主窗口成功改为中文，如下图。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;##PyCharm汉化成功后如果我们想改回英文的该如何操作呢？&lt;/p&gt;
-
-&lt;p&gt;依然是在PyCharm的设置窗口中的Plugins选项中如，下图所示&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;点击上图标注1 Plugins选项进入插件管理窗口，点击上图标注2处的 Installed选项显示所有已安装PyCharm插件，找到并选中已安装的PyCharm中文语言插件上图标注3，点击上图标注4处 Disable按钮关闭PyCharm中文语言插件，然后点击上图标注5处 确定按钮重启PyCharm，重启后PyCharm又恢复到了英文状态。&lt;/p&gt;
-
-&lt;p&gt;再次改为中文只需按此操作打开PyCharm中文语言插件即可&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="PyCharm" /><summary type="html">对于英文不行我来说使用英文版PyCharm实在是太难受了，网上好多汉化补丁都是网友提供了，下面为大家介绍一种PyCharm官方中文语言包汉化方法</summary></entry><entry><title type="html">Pycharm2020.3.2 安装教程2020最新版！（内附Pycharm永久激活码）</title><link href="https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps/" rel="alternate" type="text/html" title="Pycharm2020.3.2 安装教程2020最新版！（内附Pycharm永久激活码）" /><published>2021-01-12T00:00:00+08:00</published><updated>2021-01-12T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps</id><content type="html" xml:base="https://wuaifx.ga/2021/01/12/PyCharm2020.3.2-Installation-activation-Steps/">&lt;h3 id=&quot;关注博主微信公众号吾爱分享派然后回复激活码即可获取202032版本最新pycharm激活码&quot;&gt;关注博主微信公众号：吾爱分享派，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">Qt Designer 是一个 GUI 设计器，能可视化设计出界面。PyQT5 通过 pyuic5 工具将 Qt Designer 生成的 xxx.ui 文件转换成 python 代码，大大节省手工编写界面代码的工作量。</summary></entry><entry><title type="html">Pycharm2020.3.2 安装教程2020最新版！（内附Pycharm永久激活码）</title><link href="https://wuaifx.ga/2021/01/12/PyCharm-Installation-activation-Steps/" rel="alternate" type="text/html" title="Pycharm2020.3.2 安装教程2020最新版！（内附Pycharm永久激活码）" /><published>2021-01-12T00:00:00+08:00</published><updated>2021-01-12T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/12/PyCharm-Installation-activation-Steps</id><content type="html" xml:base="https://wuaifx.ga/2021/01/12/PyCharm-Installation-activation-Steps/">&lt;h3 id=&quot;关注博主微信公众号吾爱分享派然后回复激活码即可获取202032版本最新pycharm激活码&quot;&gt;关注博主微信公众号：吾爱分享派，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~&lt;/h3&gt;
 
 &lt;p&gt;PyCharm 是我用过的python编辑器中，比较顺手的一个。而且可以跨平台，在macos和windows下面都可以用，这点比较好。是python现在最好用的编辑器，没有之一。&lt;/p&gt;
 
@@ -432,7 +401,39 @@ create associations 创建关联，关联.py文件，双击都是以pycharm打�
 
 &lt;p&gt;Evaluate试用 一般是30天，不推荐&lt;/p&gt;
 
-&lt;p&gt;国内一般都是破解激活，到此安装已完成，具体激活请看激活的随笔。&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="PyCharm" /><summary type="html">关注博主微信公众号：吾爱分享派，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~</summary></entry><entry><title type="html">给 Mac 添加右键菜单「使用 VSCode 打开」</title><link href="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/" rel="alternate" type="text/html" title="给 Mac 添加右键菜单「使用 VSCode 打开」" /><published>2020-10-28T00:00:00+08:00</published><updated>2020-10-28T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/10/28/add-vscode-to-right-click</id><content type="html" xml:base="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/">&lt;p&gt;最终的实现效果是在文件 / 文件夹上右击时，会出现菜单项「用 VSCode 打开」，点击后会启动 Visual Studio Code 打开对应的文件 / 文件夹。&lt;/p&gt;
+&lt;p&gt;国内一般都是破解激活，到此安装已完成，具体激活请看激活的随笔。&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="PyCharm" /><summary type="html">关注博主微信公众号：吾爱分享派，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~</summary></entry><entry><title type="html">使用PyCharm官方中文语言包汉化PyCharm</title><link href="https://wuaifx.ga/2021/01/12/PyCharm-chinese/" rel="alternate" type="text/html" title="使用PyCharm官方中文语言包汉化PyCharm" /><published>2021-01-12T00:00:00+08:00</published><updated>2021-01-12T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/12/PyCharm-chinese</id><content type="html" xml:base="https://wuaifx.ga/2021/01/12/PyCharm-chinese/">&lt;p&gt;对于英文不行我来说使用英文版PyCharm实在是太难受了，网上好多汉化补丁都是网友提供了，下面为大家介绍一种PyCharm官方中文语言包汉化方法&lt;/p&gt;
+
+&lt;p&gt;在PyCharm主窗口中点击菜单栏中的File菜单下的Settings…菜单进入PyCharm设置窗口，如下图&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/mac/auto-operate.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;PyCharm设置窗口，如下图。点击下图标注1 Plugins选项进入PyCharm插件管理窗口，在下图标注2处输入“chinese”系统会自动搜索相关插件，找到如下图标注3处所示的chinese(simplified) language pack eap插件安装此插件（点击下图标注4处 Install按钮）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;PyCharm中文语言插件安装完成后需要重启PyCharm，如下图所示。点击下图标注1或2处 RESTART IDE按钮重启PyCharm&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击上图标注1或2处 Restart IDE按钮重启PyCharm后弹出确认重启提示窗，如下图。点击下图标注1处 Restart按钮确认重启PyCharm&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;完成重启后PyCharm主窗口成功改为中文，如下图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;##PyCharm汉化成功后如果我们想改回英文的该如何操作呢？&lt;/p&gt;
+
+&lt;p&gt;依然是在PyCharm的设置窗口中的Plugins选项中如，下图所示&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/pycharm-ch4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击上图标注1 Plugins选项进入插件管理窗口，点击上图标注2处的 Installed选项显示所有已安装PyCharm插件，找到并选中已安装的PyCharm中文语言插件上图标注3，点击上图标注4处 Disable按钮关闭PyCharm中文语言插件，然后点击上图标注5处 确定按钮重启PyCharm，重启后PyCharm又恢复到了英文状态。&lt;/p&gt;
+
+&lt;p&gt;再次改为中文只需按此操作打开PyCharm中文语言插件即可&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="PyCharm" /><summary type="html">对于英文不行我来说使用英文版PyCharm实在是太难受了，网上好多汉化补丁都是网友提供了，下面为大家介绍一种PyCharm官方中文语言包汉化方法</summary></entry><entry><title type="html">给 Mac 添加右键菜单「使用 VSCode 打开」</title><link href="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/" rel="alternate" type="text/html" title="给 Mac 添加右键菜单「使用 VSCode 打开」" /><published>2020-10-28T00:00:00+08:00</published><updated>2020-10-28T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/10/28/add-vscode-to-right-click</id><content type="html" xml:base="https://wuaifx.ga/2020/10/28/add-vscode-to-right-click/">&lt;p&gt;最终的实现效果是在文件 / 文件夹上右击时，会出现菜单项「用 VSCode 打开」，点击后会启动 Visual Studio Code 打开对应的文件 / 文件夹。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/posts/mac/open-with-vscode.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
