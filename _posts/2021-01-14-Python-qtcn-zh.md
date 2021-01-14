@@ -24,7 +24,11 @@ keywords: Python， windows， PyQt5(designer)
 
 >Ps：不想下载Qt但是又想要designer_zh_CN.qm这个翻译文件的，笔者提供下载地址如下：
 
-<font color=#red size=4 face="黑体">请关注本人公众号：吾爱分享派，回复：designer汉化文件获取下载地址</font>
+
+
+### 请关注本人公众号：吾爱分享派，回复：designer汉化文件获取下载地址 ###
+
+
 
 步骤3
 将拷贝的翻译文件复制到 PyQt5 的translations文件夹中
