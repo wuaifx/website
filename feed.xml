@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-14T18:31:47+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;p&gt;##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-14T18:45:34+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;p&gt;##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/p&gt;
 
 &lt;p&gt;首先直接用pip安装的PyQt-tools的Designer和windows执行程序安装的Designer，是不带翻译文件的，因此我们要把Qt creator中Designer的翻译文件拷贝到Pyqt的Designer目录中。&lt;/p&gt;
 
@@ -18,7 +18,7 @@
   &lt;p&gt;Ps：不想下载Qt但是又想要designer_zh_CN.qm这个翻译文件的，笔者提供下载地址如下：&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;####请关注本人公众号：吾爱分享派，回复：“designer汉化文件“获取下载地址&lt;/p&gt;
+&lt;p&gt;####请关注本人公众号：吾爱分享派，回复：“designer汉化文件“获取下载地址 ###&lt;/p&gt;
 
 &lt;p&gt;步骤3
 将拷贝的翻译文件复制到 PyQt5 的translations文件夹中&lt;/p&gt;
