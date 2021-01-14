@@ -6,9 +6,10 @@ description: 利用Python3开发一款小工具（界面的设计）
 keywords: Python， windows, pycharm, 软件开发， PublicSoftwareProject
 ---
 
-##简单的小例子
+##简单的小例子```
 
-	```sh
+
+
 	#!/usr/bin/python3
 	# -*- coding: utf-8 -*-
 	import os
@@ -23,55 +24,42 @@ keywords: Python， windows, pycharm, 软件开发， PublicSoftwareProject
     MyUI.resize(250, 150)
     MyUI.show()
     sys.exit(app.exec_())
-	```
 
 ![](/images/posts/python/PuSoftP.png)
     
 上面的图就是运行之后的小窗口，下面对代码进行分块介绍：
 
-	```sh
 	#!/usr/bin/python3
 	# -*- coding: utf-8 -*-
-	```
+	
 第一行的含义是指定python3执行，第二行指定编码方式utf-8
 
-	```sh
 	import os
 	import sys
 	import paramiko
 	from PyQt5 import QtCore, QtGui, QtWidgets
-	```
-
+	
 这里是导入基本的必要模块，因为需要做界面，因此我我们将PyQt模块导入。
 
-	```sh
 	app = QtWidgets.QApplication(sys.argv)
-	```
+	
 所有的PyQt5应用必须创建一个应用（Application）对象。sys.argv参数是一个来自命令行的参数列表。Python脚本可以在shell中运行。这是我们用来控制我们应用启动的一种方法。
 
-	```sh
 	MyUI = QtWidgets.QWidget()
-	```
 
 Qwidget组件是PyQt5中所有用户界面类的基础类。这里给QWidget提供了默认的构造方法。
 
-	```sh
 	MyUI.setWindowsTitle('demo')
 	MyUI.resize(250, 150)
-	```
-
+	
 resize()方法调整了widget组件的大小。它现在是250px宽，150px高。
 setWindowsTitle(‘demo’)设置了我们窗口的标题，这个标题显示在标题栏中。
 
-	```sh
 	MyUI.show()
-	```
 
 show()方法在屏幕上显示出widget。一个widget对象在这里第一次被在内存中创建，并且之后在屏幕上显示。
 
-	```sh
 	sys.exit(app.exec_())
-	```
 
 最后，应用进入主循环。在这个地方，事件处理开始执行。主循环用于接收来自窗口触发的事件，并且转发他们到widget应用上处理。如果我们调用exit()方法或主widget组件被销毁，主循环将退出。sys.exit()方法确保一个不留垃圾的退出。系统环境将会被通知应用是怎样被结束的。
 
@@ -106,6 +94,7 @@ exec_()方法有一个下划线。因为exec是Python保留关键字。因此，
 >到此就可以在designer里面设计页面
 
 ![](/images/posts/python/PuSoftP1.png)
+
 
 
 
