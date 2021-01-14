@@ -8,7 +8,7 @@ keywords: Python， windows, pycharm, 软件开发， PublicSoftwareProject
 
 ##简单的小例子
 
-	```sh
+	```post
 	#!/usr/bin/python3
 	# -*- coding: utf-8 -*-
 	import os
@@ -25,17 +25,17 @@ keywords: Python， windows, pycharm, 软件开发， PublicSoftwareProject
     sys.exit(app.exec_())
 	```
 
-	![](/images/posts/python/PuSoftP.png)
+![](/images/posts/python/PuSoftP.png)
     
 上面的图就是运行之后的小窗口，下面对代码进行分块介绍：
 
-	```sh
+	```
 	#!/usr/bin/python3
 	# -*- coding: utf-8 -*-
 	```
 第一行的含义是指定python3执行，第二行指定编码方式utf-8
 
-	```sh
+	```
 	import os
 	import sys
 	import paramiko
@@ -44,18 +44,18 @@ keywords: Python， windows, pycharm, 软件开发， PublicSoftwareProject
 
 这里是导入基本的必要模块，因为需要做界面，因此我我们将PyQt模块导入。
 
-	```sh
+	
 	app = QtWidgets.QApplication(sys.argv)
 	```
 所有的PyQt5应用必须创建一个应用（Application）对象。sys.argv参数是一个来自命令行的参数列表。Python脚本可以在shell中运行。这是我们用来控制我们应用启动的一种方法。
 
-	```sh
+	
 	MyUI = QtWidgets.QWidget()
 	```
 
 Qwidget组件是PyQt5中所有用户界面类的基础类。这里给QWidget提供了默认的构造方法。
 
-	```sh
+	
 	MyUI.setWindowsTitle('demo')
 	MyUI.resize(250, 150)
 	```
@@ -63,13 +63,13 @@ Qwidget组件是PyQt5中所有用户界面类的基础类。这里给QWidget提�
 resize()方法调整了widget组件的大小。它现在是250px宽，150px高。
 setWindowsTitle(‘demo’)设置了我们窗口的标题，这个标题显示在标题栏中。
 
-	```sh
+	
 	MyUI.show()
 	```
 
 show()方法在屏幕上显示出widget。一个widget对象在这里第一次被在内存中创建，并且之后在屏幕上显示。
 
-	```sh
+	
 	sys.exit(app.exec_())
 	```
 
@@ -101,11 +101,11 @@ exec_()方法有一个下划线。因为exec是Python保留关键字。因此，
 设计步骤：
 >pycharm-tools-extension tools- qt designer
 
-	![](/images/posts/python/PuSoftP0.png)
+![](/images/posts/python/PuSoftP0.png)
 
->到此就可以在designer里面设计页面了
+>到此就可以在designer里面设计页面
 
-
+![](/images/posts/python/PuSoftP1.png)
 
 
 
