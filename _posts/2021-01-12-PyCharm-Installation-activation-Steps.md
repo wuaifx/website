@@ -21,7 +21,7 @@ PyCharm 是我用过的python编辑器中，比较顺手的一个。而且可以
 
 可以去PyCharm官网：https://www.jetbrains.com 下载对应机器的安装包。
 
-##安装包下载
+## 安装包下载 ##
 
 第一步：进入PyCharm官网，点击开发者工具，如下图所示：
 
@@ -39,7 +39,7 @@ PyCharm 是我用过的python编辑器中，比较顺手的一个。而且可以
 	
 ![](/images/posts/python/pycharm2.png)
 
-##python安装过程
+## python安装过程 ##
  第一步：找到下载好的PyCharm安装包，如下图所示“
 
 ![](/images/posts/python/pycharm3.png)
@@ -56,21 +56,21 @@ PyCharm 是我用过的python编辑器中，比较顺手的一个。而且可以
 
 ![](/images/posts/python/pycharm6.png)
 
-##数字1：
+## 数字1： ##
 create desktop shortcut（创建桌面快捷方式），系统32位就选32-bit,系统64位就选64-bit。现在大多数都是64位了，不清楚系统类型：我的电脑=》右键=》属性
 
 笔者的电脑是64位系统，所以选择64位。
 
-##数字2：
+## 数字2： ##
 update path variable(restart needed)更新路径变量(需要重新启动)，add launchers dir to the path（将启动器目录添加到路径中）。上一个PyCharm版本没有的，所以没有选择。
 
-##数字3：
+## 数字3： ##
 update context menu（更新上下文菜单），add open folder as project（添加打开文件夹作为项目）。上一个PyCharm版本没有的，所以没有选择。
 
-##数字4：
+## 数字4： ##
 create associations 创建关联，关联.py文件，双击都是以pycharm打开。
 
-##数字5：
+## 数字5： ##
 不要选，我第一次安装的时候就是勾选了，差点放弃。pycharn是国外的软件，网站就是国外，下载速度很慢。有人选上等一两个小时，我等半小时，直接强制关掉。没勾选安装很快完成。把数字1和数字4勾选就好，数字2和数字3看你自己需求。（数字5如果有需求，自己可以单独去官网下载安装JRE）
 
 第五步：点击Next，进入下图界面：

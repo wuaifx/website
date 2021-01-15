@@ -6,7 +6,7 @@ description: python安装
 keywords: Python， windows
 ---
 
-##python环境的搭建
+## python环境的搭建 ##
 1.下载python（这里以python3.8.6为例）
 
 step 1：打开下载网址：https://www.python.org/downloads/windows/

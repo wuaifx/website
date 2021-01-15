@@ -6,7 +6,7 @@ description: pycharm的python解释器的搭建和创建第一个项目
 keywords: Python， windows, pycharm
 ---
 
-##pycharm的python解释器的搭建和创建第一个项目
+## pycharm的python解释器的搭建和创建第一个项目 ##
 
 step 1：打开pycharm并且点击设置，如下图
 
@@ -33,7 +33,7 @@ step 5：完成后，如下图，点确定
 step 6：至此安装完成
 
 
-##pycharm的建立一个新项目
+## pycharm的建立一个新项目 ##
 
 首先打开pycharm，接下来是一些按照顺序摆放的配置图片。完成pycharm的一个项目创建。
 

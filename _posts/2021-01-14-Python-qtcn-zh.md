@@ -4,9 +4,10 @@ title: 如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化
 categories: Python
 description: 如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）
 keywords: Python， windows， PyQt5(designer)
+topmost: true
 ---
 
-##如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）
+### 如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化） ###
 
 首先直接用pip安装的PyQt-tools的Designer和windows执行程序安装的Designer，是不带翻译文件的，因此我们要把Qt creator中Designer的翻译文件拷贝到Pyqt的Designer目录中。
 

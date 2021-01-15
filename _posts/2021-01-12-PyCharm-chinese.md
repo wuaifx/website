@@ -6,8 +6,8 @@ description: 使用PyCharm官方中文语言包汉化PyCharm
 keywords: PyCharm， windows
 ---
 
-对于英文不行我来说使用英文版PyCharm实在是太难受了，网上好多汉化补丁都是网友提供了，下面为大家介绍一种PyCharm官方中文语言包汉化方法
-
+## 对于英文不行我来说使用英文版PyCharm实在是太难受了，网上好多汉化补丁都是网友提供了，下面为大家介绍一种PyCharm官方中文语言包汉化方法
+ ##
 在PyCharm主窗口中点击菜单栏中的File菜单下的Settings...菜单进入PyCharm设置窗口，如下图
 
 ![](/images/posts/python/pycharm-ch.png)
@@ -32,7 +32,7 @@ PyCharm中文语言插件安装完成后需要重启PyCharm，如下图所示。
 ![](/images/posts/python/pycharm-ch3.png)
 
 
-##PyCharm汉化成功后如果我们想改回英文的该如何操作呢？
+## PyCharm汉化成功后如果我们想改回英文的该如何操作呢？ ##
 
 依然是在PyCharm的设置窗口中的Plugins选项中如，下图所示
 	
