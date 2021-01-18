@@ -95,13 +95,32 @@ exec_()方法有一个下划线。因为exec是Python保留关键字。因此，
 
 ![](/images/posts/python/PuSoftP1.png)
 
+## 3、如何让小工具显示图标 ##
 
 
+代码
 
+	class Ui_L3AutoCodeCheck(QtWidgets.QMainWindow):
+    	def __init__(self):
+        	super(Ui_L3AutoCodeCheck, self).__init__()
+        	***省略*****
+        	icon = QtGui.QIcon()
+        	icon.addPixmap(QtGui.QPixmap("python.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        	self.setWindowIcon(QtGui.QIcon(':python.ico'))
+        	***省略****
 
+重点关注这里的代码，将本地的ico图形文件关联到工具中，这里需要用到extension tools中的pyrcc将ico的文件转换py文件。
 
+>建立img.qry文件
 
+	<!DOCTYPE RCC>
+		<RCC>
+    	<qresource>
+        <file alias="python.ico">python.ico</file>
+    	</qresource>
+	</RCC>
 
+qt designer中将图片添加到resource中
 
 
 
