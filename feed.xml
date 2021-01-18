@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-15T11:07:00+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;h3 id=&quot;如何将pyqtpyqt-tools中的qt-designer改为中文界面汉化&quot;&gt;如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-18T14:59:13+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;h3 id=&quot;如何将pyqtpyqt-tools中的qt-designer改为中文界面汉化&quot;&gt;如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/h3&gt;
 
 &lt;p&gt;首先直接用pip安装的PyQt-tools的Designer和windows执行程序安装的Designer，是不带翻译文件的，因此我们要把Qt creator中Designer的翻译文件拷贝到Pyqt的Designer目录中。&lt;/p&gt;
 
@@ -134,7 +134,37 @@ setWindowsTitle(‘demo’)设置了我们窗口的标题，这个标题显示�
   &lt;p&gt;到此就可以在designer里面设计页面&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/python/PuSoftP1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">简单的小例子```</summary></entry><entry><title type="html">python安装</title><link href="https://wuaifx.ga/2021/01/13/Python-install/" rel="alternate" type="text/html" title="python安装" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/Python-install</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/Python-install/">&lt;h2 id=&quot;python环境的搭建&quot;&gt;python环境的搭建&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/python/PuSoftP1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3如何让小工具显示图标&quot;&gt;3、如何让小工具显示图标&lt;/h2&gt;
+
+&lt;p&gt;代码&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Ui_L3AutoCodeCheck(QtWidgets.QMainWindow):
+	def __init__(self):
+    	super(Ui_L3AutoCodeCheck, self).__init__()
+    	***省略*****
+    	icon = QtGui.QIcon()
+    	icon.addPixmap(QtGui.QPixmap(&quot;python.ico&quot;), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+    	self.setWindowIcon(QtGui.QIcon(':python.ico'))
+    	***省略****
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;重点关注这里的代码，将本地的ico图形文件关联到工具中，这里需要用到extension tools中的pyrcc将ico的文件转换py文件。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;建立img.qry文件&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!DOCTYPE RCC&amp;gt;
+	&amp;lt;RCC&amp;gt;
+	&amp;lt;qresource&amp;gt;
+    &amp;lt;file alias=&quot;python.ico&quot;&amp;gt;python.ico&amp;lt;/file&amp;gt;
+	&amp;lt;/qresource&amp;gt;
+&amp;lt;/RCC&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;qt designer中将图片添加到resource中&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Python" /><summary type="html">简单的小例子```</summary></entry><entry><title type="html">python安装</title><link href="https://wuaifx.ga/2021/01/13/Python-install/" rel="alternate" type="text/html" title="python安装" /><published>2021-01-13T00:00:00+08:00</published><updated>2021-01-13T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/13/Python-install</id><content type="html" xml:base="https://wuaifx.ga/2021/01/13/Python-install/">&lt;h2 id=&quot;python环境的搭建&quot;&gt;python环境的搭建&lt;/h2&gt;
 &lt;p&gt;1.下载python（这里以python3.8.6为例）&lt;/p&gt;
 
 &lt;p&gt;step 1：打开下载网址：https://www.python.org/downloads/windows/&lt;/p&gt;
