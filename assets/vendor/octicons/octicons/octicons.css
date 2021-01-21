@@ -138,7 +138,7 @@
 .octicon-mail:before { content: '\f03b'} /*  */
 .octicon-mail-read:before { content: '\f03c'} /*  */
 .octicon-mail-reply:before { content: '\f051'} /*  */
-.octicon-mark-github:before { content: '\f00a'} /*  */
+/*.octicon-mark-github:before { content: '\f00a'}   */
 .octicon-markdown:before { content: '\f0c9'} /*  */
 .octicon-megaphone:before { content: '\f077'} /*  */
 .octicon-mention:before { content: '\f0be'} /*  */
