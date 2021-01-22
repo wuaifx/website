@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-21T09:37:44+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;h3 id=&quot;如何将pyqtpyqt-tools中的qt-designer改为中文界面汉化&quot;&gt;如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-01-22T10:01:35+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;h3 id=&quot;如何将pyqtpyqt-tools中的qt-designer改为中文界面汉化&quot;&gt;如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/h3&gt;
 
 &lt;p&gt;首先直接用pip安装的PyQt-tools的Designer和windows执行程序安装的Designer，是不带翻译文件的，因此我们要把Qt creator中Designer的翻译文件拷贝到Pyqt的Designer目录中。&lt;/p&gt;
 
@@ -314,7 +314,283 @@ ui_components.setupUi(mainwindow)
 mainwindow.show()
 
 sys.exit(app.exec_())
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="PyCharm" /><summary type="html">Qt Designer 是一个 GUI 设计器，能可视化设计出界面。PyQT5 通过 pyuic5 工具将 Qt Designer 生成的 xxx.ui 文件转换成 python 代码，大大节省手工编写界面代码的工作量。</summary></entry><entry><title type="html">Pycharm2020.3.2 安装教程2020最新版（内附Pycharm永久激活码）</title><link href="https://wuaifx.ga/2021/01/12/PyCharm-Installation-activation-Steps/" rel="alternate" type="text/html" title="Pycharm2020.3.2 安装教程2020最新版（内附Pycharm永久激活码）" /><published>2021-01-12T00:00:00+08:00</published><updated>2021-01-12T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/12/PyCharm-Installation-activation-Steps</id><content type="html" xml:base="https://wuaifx.ga/2021/01/12/PyCharm-Installation-activation-Steps/">&lt;p&gt;Pycharm2020.3.2 安装、激活教程&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="PyCharm" /><summary type="html">Qt Designer 是一个 GUI 设计器，能可视化设计出界面。PyQT5 通过 pyuic5 工具将 Qt Designer 生成的 xxx.ui 文件转换成 python 代码，大大节省手工编写界面代码的工作量。</summary></entry><entry><title type="html">大学语文课程作业_A</title><link href="https://wuaifx.ga/2021/01/12/CollegeChineseAssignment-A/" rel="alternate" type="text/html" title="大学语文课程作业_A" /><published>2021-01-12T00:00:00+08:00</published><updated>2021-01-12T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/12/CollegeChineseAssignment%20A</id><content type="html" xml:base="https://wuaifx.ga/2021/01/12/CollegeChineseAssignment-A/">&lt;p&gt;一、单选题&lt;/p&gt;
+
+&lt;p&gt;1.(4分)李商隐与下列哪位诗人合称为“小李杜&lt;/p&gt;
+
+&lt;p&gt;A. 杜甫
+ B. 杜审言
+ C. 杜林
+ D. 杜牧
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第四章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案D
+解析第四章第九节李商隐《无题》&lt;/p&gt;
+
+&lt;p&gt;2.(4分)以四言诗为主要形式的是以下&lt;/p&gt;
+
+&lt;p&gt;A. 《论语》
+ B. 《诗经》
+ C. 《九歌》
+ D. 《九章》
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第一章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案B
+解析第一章第一节《诗经》概述&lt;/p&gt;
+
+&lt;p&gt;3.(4分)曹雪芹创作了前八十回，取名《石头记》，高鹗和程伟元增补的后四十回，书名《红楼梦》，通称为&lt;/p&gt;
+
+&lt;p&gt;A. 程甲本
+ B. 程乙本
+ C. 曹氏本
+ D. 高氏本
+得分： 0&lt;/p&gt;
+
+&lt;p&gt;知识点： 第七章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案A
+解析第七章第二节《红楼梦》&lt;/p&gt;
+
+&lt;p&gt;4.(4分)夏衍创作的报告文学是&lt;/p&gt;
+
+&lt;p&gt;A. 《赤都心史》
+ B. 《包身工》
+ C. 《塞上行》
+ D. 《饿乡纪程》
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第十章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案B
+解析第十章第一节现当代散文概述&lt;/p&gt;
+
+&lt;p&gt;5.(4分)1895年12月28日电影正式诞生于哪里&lt;/p&gt;
+
+&lt;p&gt;A. 法国巴黎
+ B. 美国纽约
+ C. 英国伦敦
+ D. 德国柏林
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第十二章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案A
+解析第十二章第一节影视传媒概述&lt;/p&gt;
+
+&lt;p&gt;6.(4分)下列被称为“自传体小说”的是&lt;/p&gt;
+
+&lt;p&gt;A. 叶圣陶的《这也是一个人？》
+ B. 张爱玲的《金锁记》
+ C. 郁达夫的《沉沦》
+ D. 丁玲的《太阳照在桑干河上》
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第八章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案C
+解析第八章第一节现当代小说概述&lt;/p&gt;
+
+&lt;p&gt;7.(4分)我国历史上第一个兴办私学的人是
+ A. 老子
+ B. 孔子
+ C. 孟子
+ D. 屈原
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第二章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案B
+解析第二章第二节《季氏将伐颛臾》&lt;/p&gt;
+
+&lt;p&gt;8.(4分)艾青在狱中写作的，并以“艾青”这一笔名发表的诗歌是&lt;/p&gt;
+
+&lt;p&gt;A. 《北方》
+ B. 《大堰河—我的保姆》
+ C. 《向太阳》
+ D. 《火把》
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第九章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案B
+解析第九章第四节艾青《北方》&lt;/p&gt;
+
+&lt;p&gt;9.(4分)文革结束后最早出现的揭露和控诉四人帮罪行、宣泄人民呼声的小说是&lt;/p&gt;
+
+&lt;p&gt;A. 伤痕小说
+ B. 反思小说
+ C. 改革小说
+ D. 寻根小说
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第八章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案A
+解析第八章第一节现当代小说概述&lt;/p&gt;
+
+&lt;p&gt;10.(4分)《诗经》中的精华部分是&lt;/p&gt;
+
+&lt;p&gt;A. 颂
+ B. 大雅
+ C. 小雅
+ D. 风
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第一章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案D
+解析第一章第一节《诗经》《楚辞》概述&lt;/p&gt;
+
+&lt;p&gt;二、判断题&lt;/p&gt;
+
+&lt;p&gt;1.(4分)《苏武传》出自司马迁的《史记》一书。
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第三章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案错误
+解析第三章第三节《汉书 苏武传》&lt;/p&gt;
+
+&lt;p&gt;2.(4分)池莉、刘震云、方方是新写实小说的代表作家。
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第八章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案正确
+解析第八章第一节现当代小说概述&lt;/p&gt;
+
+&lt;p&gt;3.(4分)《狂人日记》是白话文小说，而前面的小序则是文言文，可见当时鲁迅小说写作还不成熟，存在诸多矛盾的地方。
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第八章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案错误
+解析第八章第二节鲁迅《狂人日记》&lt;/p&gt;
+
+&lt;p&gt;4.(4分)40年代小说创作日趋成熟，作家的风格多样，其中讽刺知识分子弊病的是巴金的《寒夜》。
+得分： 0&lt;/p&gt;
+
+&lt;p&gt;知识点： 第八章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案错误
+解析第八章第一节现当代小说概述&lt;/p&gt;
+
+&lt;p&gt;5.(4分)欧阳修代表作有《醉翁亭记》等，有《欧阳文忠公集》传世。
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第六章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案正确
+解析第六章第四节欧阳修&lt;/p&gt;
+
+&lt;p&gt;6.(4分)造句时要注意的几点要求是完整、通顺、简单、变化。
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第十三章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案错误
+解析第十三章第二节语言运用问题&lt;/p&gt;
+
+&lt;p&gt;7.(4分)鲁迅的《野草》是现代散文诗的代表作品。
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第十章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案正确
+解析第十章第一节现当代散文概述&lt;/p&gt;
+
+&lt;p&gt;8.(4分)鲁迅的《饿乡纪程》是最早的报告文学作品。
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第十章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案错误
+解析第十章第一节现当代散文概述&lt;/p&gt;
+
+&lt;p&gt;9.(4分)《茶馆》在戏剧形式方面，采用了“三组风俗画”
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第十一章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案正确
+解析第十一章第三节老舍《茶馆》&lt;/p&gt;
+
+&lt;p&gt;10.(4分)我国第一部纪传体断代史是班固创作的《后汉书》。
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第三章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案错误
+解析第三章第一节《史记》、《汉书》与史传文概述&lt;/p&gt;
+
+&lt;p&gt;11.(4分)杜甫诗歌的风格可以概括为沉郁顿挫。
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第四章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案正确
+解析第四章第一节唐诗概述&lt;/p&gt;
+
+&lt;p&gt;12.(4分)《离骚》开创了我国诗歌浪漫主义传统的先河。
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第一章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案正确
+解析第一章第八节《楚辞 离骚》&lt;/p&gt;
+
+&lt;p&gt;13.(4分)文学史上所说的“现代派”指的是围绕《现代》杂志的一批诗人，包括戴望舒、何其芳、卞之琳等。
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第九章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案正确
+解析第九章第一节现当代诗歌概述&lt;/p&gt;
+
+&lt;p&gt;14.(4分)从总体上看，现代汉语规范已有明确的标准，即以北京语音为标准音，以北方话为基础方言，以典范的现代白话文著作为语法规范。
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第十三章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案正确
+解析第十三章第一节现代汉语规范化问题&lt;/p&gt;
+
+&lt;p&gt;15.(4分)《西厢记》发出的时代强音是“愿天下有情人都成了眷属。”
+得分： 4&lt;/p&gt;
+
+&lt;p&gt;知识点： 第七章
+收起解析&lt;/p&gt;
+
+&lt;p&gt;答案正确
+解析第七章第一节古代戏曲与小说概述&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="语文课程作业" /><summary type="html">一、单选题</summary></entry><entry><title type="html">Pycharm2020.3.2 安装教程2020最新版（内附Pycharm永久激活码）</title><link href="https://wuaifx.ga/2021/01/12/PyCharm-Installation-activation-Steps/" rel="alternate" type="text/html" title="Pycharm2020.3.2 安装教程2020最新版（内附Pycharm永久激活码）" /><published>2021-01-12T00:00:00+08:00</published><updated>2021-01-12T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/12/PyCharm-Installation-activation-Steps</id><content type="html" xml:base="https://wuaifx.ga/2021/01/12/PyCharm-Installation-activation-Steps/">&lt;p&gt;Pycharm2020.3.2 安装、激活教程&lt;/p&gt;
 
 &lt;h4 id=&quot;关注博主微信公众号吾爱分享派然后回复激活码即可获取202032版本最新pycharm激活码&quot;&gt;关注博主微信公众号：吾爱分享派，然后回复“激活码”，即可获取2020.3.2版本最新Pycharm激活码~&lt;/h4&gt;
 
@@ -676,66 +952,4 @@ sys.exit(app.exec_())
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://wuaifx.ga/2020/05/01/cdn-for-github-pages/&quot;&gt;使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="GitHub" /><summary type="html">之前写过一篇 使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源，在那之后，又陆续想到并实施了几点利用 jsDelivr 进一步加速静态资源加载的措施，新起一篇作为记录和分享。</summary></entry><entry><title type="html">林丹从国家队退役，带起一波回忆</title><link href="https://wuaifx.ga/2020/07/05/lindan-and-badminton/" rel="alternate" type="text/html" title="林丹从国家队退役，带起一波回忆" /><published>2020-07-05T00:00:00+08:00</published><updated>2020-07-05T00:00:00+08:00</updated><id>https://wuaifx.ga/2020/07/05/lindan-and-badminton</id><content type="html" xml:base="https://wuaifx.ga/2020/07/05/lindan-and-badminton/">&lt;p&gt;昨天朋友圈和微博上有不少人在转发林丹从国家队退役的消息，有一点感慨的同时，我在想，以后新入坑的羽毛球迷们，可能渐渐就都不知道「超级丹」、「林李大战」，还有「四大天王」这些名词了吧。&lt;/p&gt;
-
-&lt;p&gt;不过没有关系，一代人有一代人的关注点，新时代总会诞生新的偶像，就像去年周杰伦和蔡徐坤的粉丝在微博刷超话，这样的场景怕是没少发生过，场面有大有小罢了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/lindan-retired.png&quot; alt=&quot;lindan-retired&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;这一篇不讲林丹的事，讲一些我与羽毛球之间的那些可以不说的碎碎念。&lt;/p&gt;
-
-&lt;h2 id=&quot;入坑的过程&quot;&gt;入坑的过程&lt;/h2&gt;
-
-&lt;p&gt;羽毛球在国内可能是仅次于乒乓球的国民运动了，小时候哥哥姐姐们就有时候会在门口的空地上打一会儿，而我开始打羽毛球比较晚，是在参加工作以后了。&lt;/p&gt;
-
-&lt;p&gt;依照工作地点变迁的线：&lt;/p&gt;
-
-&lt;h3 id=&quot;十堰&quot;&gt;十堰&lt;/h3&gt;
-
-&lt;p&gt;第一家公司东风汽车有着浓厚的羽毛球氛围，据说与时任董事长热爱这项运动有关。当时一起入职的小伙伴们有些就此入坑，而我那时候，一方面主要运动还是偶尔打一打篮球，另一方面，因为以前基本没打过，去过几次总是接不到球感觉很丢脸，所以参与意愿也比较淡薄。&lt;/p&gt;
-
-&lt;h3 id=&quot;北京&quot;&gt;北京&lt;/h3&gt;
-
-&lt;p&gt;我的「羽毛球生涯」可以说正式开端于北漂期间，那时候跟同学们闲聊起各自公司里的业余活动，发现羽毛球很流行，推测可能是因为身体冲撞少，相比篮球足球受伤的风险更低。在蹭了同学公司的几次活动之后，萌生了一些兴趣，在入职前东家搜狗前几天，跟几个同学一起去买了球拍，打算偶尔组一局。&lt;/p&gt;
-
-&lt;p&gt;然后在前东家发现项目组里的测试童鞋们正谋划组织羽毛球活动，于是果断报名参加。刚开始也是各种接不到球、挥拍挥空，好在这时候逐渐学会了一点自嘲，终于没有退缩，坚持了下来。在这期间刷了一阵李在福的《追球》系列教学视频，对基础技术有了系统一点的了解。再后来就是参加公司和集团俱乐部的活动，基本每周都去清华气膜馆打，从被新手虐慢慢过渡到了能虐新手，然后……水平就止步不前了。&lt;/p&gt;
-
-&lt;p&gt;在那段时期还加了回龙观地区的民间组织情怀羽毛球俱乐部，周末偶尔到回龙观中学被虐一虐。&lt;/p&gt;
-
-&lt;h3 id=&quot;武汉&quot;&gt;武汉&lt;/h3&gt;
-
-&lt;p&gt;加入现东家震坤行后，我从公司羽毛球活动的参与者变成了主要组织者。武汉这边是分部，办公室人数一直不多，从开始的二十来号人到现在的一百多号人，组起一场球来依然不容易。&lt;/p&gt;
-
-&lt;p&gt;以前周末主要是和光谷社区结识的一群小伙伴一起打球，疫情后的这段时间，又组了一个「问道软件园，养生羽毛球」的群，聚集了光谷软件园几个公司的一些有热爱的小伙伴工作日下班后继续活动。&lt;/p&gt;
-
-&lt;h2 id=&quot;收获&quot;&gt;收获&lt;/h2&gt;
-
-&lt;p&gt;长期坚持一项运动收益良多，说一说我体会比较深的几个方面。&lt;/p&gt;
-
-&lt;h3 id=&quot;健康&quot;&gt;健康&lt;/h3&gt;
-
-&lt;p&gt;从事上班时久坐不动的工作，几年之后体检，基本很少有腰椎颈椎没有毛病的。坚持打羽毛球是一种比较好的预防和缓解的方法。&lt;/p&gt;
-
-&lt;p&gt;再就是，几天的工作里可能有比较烦闷的事情积攒下来，通过运动能及时把这口闷气排解出来，有时候感觉每周的这一场球就是生活的寄托了。&lt;/p&gt;
-
-&lt;h3 id=&quot;社交&quot;&gt;社交&lt;/h3&gt;
-
-&lt;p&gt;能坚持一项爱好的一般都是不错的人，在羽毛球这个圈子更是。&lt;/p&gt;
-
-&lt;p&gt;通过参与公司、民间组织的活动，我结识了不少优秀的小伙伴，一起享受运动和生活的乐趣，必要时也能相互提供其它方面的帮助。&lt;/p&gt;
-
-&lt;p&gt;我一直建议身边的年轻人们要有一项爱好，融入对应的圈子。特别建议坚持来打球，能认识一群不错的朋友不说，说不定人生的另一半也能在球场相遇，我们起源于光谷社区的约球小群里，19 个人成就了 3 对情侣的事一直被津津乐道，这可比各种相亲活动靠谱多了。&lt;/p&gt;
-
-&lt;h3 id=&quot;性格与心态&quot;&gt;性格与心态&lt;/h3&gt;
-
-&lt;p&gt;我说我是一个内向的人有很多人不信，但确实就是这样。以前是什么程度呢？上大学英语课时被老师点起来回答个问题脸能红到耳朵根，有个什么事情要找女生说，要在心里鼓好一阵的勇气。现在脸皮稍厚了一点，但内向依旧对我影响深远。&lt;/p&gt;
-
-&lt;p&gt;这样的我有一个缺陷，那就是在擅长的方面会表现得比较自信，也比较愿意去表现，而不擅长的方面就会尽量退避。这在有些时候没有问题，但在职场上，积累得多了可能就会给人一种态度不积极的印象。&lt;/p&gt;
-
-&lt;p&gt;学打羽毛球的过程，对我而言，也是一个磨炼心性的过程，从开始的接不到球、挥空拍时大家善意的嘲笑，到熟能生巧与一些业余球友可以一战，这中间我克服了一些怯懦，建立了一些自信——不擅长的方面，通过练习是可以入门和加强的。&lt;/p&gt;
-
-&lt;h2 id=&quot;资源&quot;&gt;资源&lt;/h2&gt;
-
-&lt;p&gt;最后推荐一个我觉得不错的学习资源吧，作为野路子出身系统入门挺好：&lt;/p&gt;
-
-&lt;p&gt;李在福《追球》全集：&lt;a href=&quot;https://v.youku.com/v_show/id_XMjczOTAyODI4.html&quot;&gt;https://v.youku.com/v_show/id_XMjczOTAyODI4.html&lt;/a&gt;&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="Blog" /><summary type="html">昨天朋友圈和微博上有不少人在转发林丹从国家队退役的消息，有一点感慨的同时，我在想，以后新入坑的羽毛球迷们，可能渐渐就都不知道「超级丹」、「林李大战」，还有「四大天王」这些名词了吧。</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="GitHub" /><summary type="html">之前写过一篇 使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源，在那之后，又陆续想到并实施了几点利用 jsDelivr 进一步加速静态资源加载的措施，新起一篇作为记录和分享。</summary></entry></feed>
