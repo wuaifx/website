@@ -15,7 +15,7 @@ keywords: sql
 
 现在要查找出所有学生的学号，姓名，课程和成绩。
 
-![](/images/posts/sql/sql-select.png)
+![](/images/posts/sql/sql-select1.png)
 
 【解题思路】
 1.确定查询结果
@@ -60,18 +60,18 @@ from 学生 as a
 left join 成绩 as b
 on a.学号=b.学号;
 
-![](/images/posts/sql/sql-biao.jpg)
+![](/images/posts/sql/sql-biao1.jpg)
 
 
 【本题考点】
 考察多表联结，以及如何选择联结的类型。记住课程里讲过的下面这张图，遇到多表联结的时候从这张图选择对于的sql。
 
-![](/images/posts/sql/sql-select-kaodian.jpg)
+![](/images/posts/sql/sql-select-kaodian1.jpg)
 
 【举一反三】
 有下面两个表
 
-![](/images/posts/sql/sql-juyifansan.jpg)
+![](/images/posts/sql/sql-juyifansan1.jpg)
 
 
 编写一个 SQL 查询，满足条件：无论 person 是否有地址信息，都需要基于上述两表提供 person 的以下信息：
