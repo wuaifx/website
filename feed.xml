@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-02-02T14:20:37+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">多表如何查询</title><link href="https://wuaifx.ga/2021/02/02/sql-select/" rel="alternate" type="text/html" title="多表如何查询" /><published>2021-02-02T00:00:00+08:00</published><updated>2021-02-02T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/02/02/sql-select</id><content type="html" xml:base="https://wuaifx.ga/2021/02/02/sql-select/">&lt;h2 id=&quot;题目&quot;&gt;【题目】&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-02-02T14:31:04+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">多表如何查询</title><link href="https://wuaifx.ga/2021/02/02/sql-select/" rel="alternate" type="text/html" title="多表如何查询" /><published>2021-02-02T00:00:00+08:00</published><updated>2021-02-02T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/02/02/sql-select</id><content type="html" xml:base="https://wuaifx.ga/2021/02/02/sql-select/">&lt;h2 id=&quot;题目&quot;&gt;【题目】&lt;/h2&gt;
 &lt;p&gt;现在有两个表，“学生表”记录了学生的基本信息，有“学号”、“姓名”。&lt;/p&gt;
 
 &lt;p&gt;“成绩”表记录了学生选修的课程，以及对应课程的成绩。&lt;/p&gt;
@@ -7,7 +7,7 @@
 
 &lt;p&gt;现在要查找出所有学生的学号，姓名，课程和成绩。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/sql/sql-select.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/sql/sql-select1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;【解题思路】
 1.确定查询结果&lt;/p&gt;
@@ -51,17 +51,17 @@ from 学生 as a
 left join 成绩 as b
 on a.学号=b.学号;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/sql/sql-biao.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/sql/sql-biao1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;【本题考点】
 考察多表联结，以及如何选择联结的类型。记住课程里讲过的下面这张图，遇到多表联结的时候从这张图选择对于的sql。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/sql/sql-select-kaodian.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/sql/sql-select-kaodian1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;【举一反三】
 有下面两个表&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/sql/sql-juyifansan.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/sql/sql-juyifansan1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;编写一个 SQL 查询，满足条件：无论 person 是否有地址信息，都需要基于上述两表提供 person 的以下信息：&lt;/p&gt;
 
