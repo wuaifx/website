@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-02-02T14:06:46+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">多表如何查询</title><link href="https://wuaifx.ga/2021/02/02/sql-select/" rel="alternate" type="text/html" title="多表如何查询" /><published>2021-02-02T00:00:00+08:00</published><updated>2021-02-02T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/02/02/sql-select</id><content type="html" xml:base="https://wuaifx.ga/2021/02/02/sql-select/">&lt;h2 id=&quot;题目&quot;&gt;**【题目】&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wuaifx.ga/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wuaifx.ga/" rel="alternate" type="text/html" /><updated>2021-02-02T14:20:37+08:00</updated><id>https://wuaifx.ga/feed.xml</id><title type="html">吾爱分享</title><subtitle>吾爱分享的个人博客，公众号：吾爱分享</subtitle><author><name>Wu Ai Fen Xiang</name></author><entry><title type="html">多表如何查询</title><link href="https://wuaifx.ga/2021/02/02/sql-select/" rel="alternate" type="text/html" title="多表如何查询" /><published>2021-02-02T00:00:00+08:00</published><updated>2021-02-02T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/02/02/sql-select</id><content type="html" xml:base="https://wuaifx.ga/2021/02/02/sql-select/">&lt;h2 id=&quot;题目&quot;&gt;【题目】&lt;/h2&gt;
 &lt;p&gt;现在有两个表，“学生表”记录了学生的基本信息，有“学号”、“姓名”。&lt;/p&gt;
 
 &lt;p&gt;“成绩”表记录了学生选修的课程，以及对应课程的成绩。&lt;/p&gt;
 
 &lt;p&gt;这两个表通过“学号”进行关联。&lt;/p&gt;
 
-&lt;p&gt;现在要查找出所有学生的学号，姓名，课程和成绩。** ##&lt;/p&gt;
+&lt;p&gt;现在要查找出所有学生的学号，姓名，课程和成绩。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/posts/sql/sql-select.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;解题思路】
+&lt;p&gt;【解题思路】
 1.确定查询结果&lt;/p&gt;
 
 &lt;p&gt;题目要求查询所有学生的姓名，学号，课程和成绩信息&lt;/p&gt;
@@ -81,7 +81,7 @@ on a.学号=b.学号;&lt;/p&gt;
 
 &lt;p&gt;select FirstName, LastName, City, State
 from Person left join Address
-on Person.PersonId = Address.PersonId;&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="sql" /><summary type="html">**【题目】 现在有两个表，“学生表”记录了学生的基本信息，有“学号”、“姓名”。</summary></entry><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;h3 id=&quot;如何将pyqtpyqt-tools中的qt-designer改为中文界面汉化&quot;&gt;如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/h3&gt;
+on Person.PersonId = Address.PersonId;&lt;/p&gt;</content><author><name>Wu Ai Fen Xiang</name></author><category term="sql" /><summary type="html">【题目】 现在有两个表，“学生表”记录了学生的基本信息，有“学号”、“姓名”。</summary></entry><entry><title type="html">如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）</title><link href="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/" rel="alternate" type="text/html" title="如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）" /><published>2021-01-14T00:00:00+08:00</published><updated>2021-01-14T00:00:00+08:00</updated><id>https://wuaifx.ga/2021/01/14/Python-qtcn-zh</id><content type="html" xml:base="https://wuaifx.ga/2021/01/14/Python-qtcn-zh/">&lt;h3 id=&quot;如何将pyqtpyqt-tools中的qt-designer改为中文界面汉化&quot;&gt;如何将PyQt（pyqt-tools）中的Qt Designer改为中文界面（汉化）&lt;/h3&gt;
 
 &lt;p&gt;首先直接用pip安装的PyQt-tools的Designer和windows执行程序安装的Designer，是不带翻译文件的，因此我们要把Qt creator中Designer的翻译文件拷贝到Pyqt的Designer目录中。&lt;/p&gt;
 
