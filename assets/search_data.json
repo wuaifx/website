@@ -1121,6 +1121,14 @@
     } ,
   
     {
+      "title"    : "多表如何查询",
+      "category" : "sql",
+      
+      "url"      : "https://wuaifx.ga/2021/02/02/sql-select/",
+      "keywords" : "sql"
+    } ,
+  
+    {
       "title"    : "Linux/Unix",
       "category" : "Linux",
       
