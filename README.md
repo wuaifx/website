@@ -1,6 +1,6 @@
 # 吾爱分享
 
-我的个人博客：<https://wuaifx.ga>，欢迎 Star 和 Fork。
+我的个人博客：<https://website-psi-olive.vercel.app/>，欢迎 Star 和 Fork。
 
 ## 概览
 
@@ -19,7 +19,7 @@
 
 **[在线预览 &rarr;](https://wuaifx.ga)**
 
-![screenshot home](https://wuaifx.ga/assets/images/screenshots/home.png)
+![screenshot home](https://website-psi-olive.vercel.app/assets/images/screenshots/home.png)
 
 ## Fork 指南
 
@@ -80,7 +80,7 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 如果对本博客模板或者内容有任何建议，可以通过 [Issues](https://wuaifx.ga/issues) 或者微信公众号「吾爱分享」与我取得联系。
 
-<img width="192px" height="192px" src="https://wuaifx.ga/assets/images/qrcode.jpg"/>
+<img width="192px" height="192px" src="https://website-psi-olive.vercel.app/assets/images/qrcode.jpg"/>
 
 <!--
 致谢
@@ -91,7 +91,7 @@ Thanks for JetBrains' support.
 
 <a href="https://www.jetbrains.com/?from=wuaifx.github.io"><img src="./assets/images/jetbrains.svg"/></a>
 
-[1]: https://github.com/wuaifx/chinese-copywriting-guidelines
+[1]: https://github.com/website-psi-olive.vercel/chinese-copywriting-guidelines
 [2]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
-[3]: https://github.com/wuaifx/wuaifx.github.io/issues/2
+[3]: https://github.com/website-psi-olive.vercel/website-psi-olive.vercel.github.io/issues/2
 -->
